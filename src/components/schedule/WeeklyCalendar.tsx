@@ -3,6 +3,7 @@
 import React, { useMemo } from "react";
 import { ScheduleEntry } from "@/lib/types";
 import { getProfessorBgClass, getAllProfessorColors } from "@/lib/professorColors";
+import { getDepartmentBgClass } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface WeeklyCalendarProps {
@@ -218,6 +219,9 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
                           <div className="font-semibold truncate">{entry.subject}</div>
                           <div className="opacity-80 truncate">{entry.professor}</div>
                           <div className="opacity-60 truncate">{entry.classroom}</div>
+                          <span className={`inline-block mt-0.5 px-1.5 py-0 rounded text-[9px] font-bold ${getDepartmentBgClass(entry.department)}`}>
+                            {entry.department}
+                          </span>
                         </div>
                       ))}
                     </div>
