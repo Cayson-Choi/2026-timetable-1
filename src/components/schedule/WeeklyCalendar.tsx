@@ -3,10 +3,13 @@
 import React, { useMemo } from "react";
 import { ScheduleEntry } from "@/lib/types";
 import { getProfessorBgClass, getAllProfessorColors } from "@/lib/professorColors";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface WeeklyCalendarProps {
   data: ScheduleEntry[];
   week: number | null;
+  availableWeeks: number[];
+  onWeekChange: (week: number) => void;
 }
 
 const WEEKDAYS = ["월", "화", "수", "목", "금"];
@@ -23,8 +26,12 @@ const DAY_COLORS: Record<string, { header: string; text: string }> = {
   "토": { header: "bg-rose-100 dark:bg-rose-900/20", text: "text-rose-700 dark:text-rose-300" },
 };
 
-export function WeeklyCalendar({ data, week }: WeeklyCalendarProps) {
-  const targetWeek = week ?? (data.length > 0 ? data[0].week : 1);
+export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: WeeklyCalendarProps) {
+  const sortedWeeks = useMemo(() => [...availableWeeks].sort((a, b) => a - b), [availableWeeks]);
+  const targetWeek = week ?? (sortedWeeks.length > 0 ? sortedWeeks[0] : 1);
+  const currentIdx = sortedWeeks.indexOf(targetWeek);
+  const hasPrev = currentIdx > 0;
+  const hasNext = currentIdx < sortedWeeks.length - 1;
   const weekData = data.filter((d) => d.week === targetWeek);
 
   const hasSaturday = weekData.some((d) => d.day === "토");
@@ -75,8 +82,35 @@ export function WeeklyCalendar({ data, week }: WeeklyCalendarProps) {
   if (weekData.length === 0) {
     return (
       <div className="text-center py-16 text-gray-400 dark:text-gray-500">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <button
+            onClick={() => hasPrev && onWeekChange(sortedWeeks[currentIdx - 1])}
+            disabled={!hasPrev}
+            className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
+              hasPrev
+                ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+                : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+            }`}
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <span className="text-lg font-bold text-gray-900 dark:text-white min-w-[140px]">
+            {targetWeek}주차
+          </span>
+          <button
+            onClick={() => hasNext && onWeekChange(sortedWeeks[currentIdx + 1])}
+            disabled={!hasNext}
+            className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
+              hasNext
+                ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+                : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+            }`}
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
         <p className="text-lg font-medium">해당 주차에 수업이 없습니다</p>
-        <p className="text-sm mt-1">다른 주차를 선택해 보세요</p>
+        <p className="text-sm mt-1">← → 버튼으로 다른 주차를 확인해 보세요</p>
       </div>
     );
   }
@@ -95,15 +129,42 @@ export function WeeklyCalendar({ data, week }: WeeklyCalendarProps) {
 
       <div className="overflow-x-auto">
         <div className={hasSaturday ? "min-w-[840px]" : "min-w-[700px]"}>
-          <div className="text-center mb-4">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-              {targetWeek}주차 시간표
-            </h3>
-            {hasSaturday && (
-              <p className="text-xs text-emerald-600 dark:text-emerald-400 mt-1 font-medium">
-                P-TECH 토요일 수업 포함
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <button
+              onClick={() => hasPrev && onWeekChange(sortedWeeks[currentIdx - 1])}
+              disabled={!hasPrev}
+              className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
+                hasPrev
+                  ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+                  : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+              }`}
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <div className="text-center min-w-[140px]">
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                {targetWeek}주차 시간표
+              </h3>
+              {hasSaturday && (
+                <p className="text-xs text-emerald-600 dark:text-emerald-400 mt-0.5 font-medium">
+                  P-TECH 토요일 수업 포함
+                </p>
+              )}
+              <p className="text-xs text-gray-400 mt-0.5">
+                {currentIdx + 1} / {sortedWeeks.length}
               </p>
-            )}
+            </div>
+            <button
+              onClick={() => hasNext && onWeekChange(sortedWeeks[currentIdx + 1])}
+              disabled={!hasNext}
+              className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
+                hasNext
+                  ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+                  : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+              }`}
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
 
           <div
