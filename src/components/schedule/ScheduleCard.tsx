@@ -6,6 +6,7 @@ import {
   getDepartmentBgClass,
   getDepartmentBorderClass,
 } from "@/lib/utils";
+import { getProfessorBorderClass, getProfessorDotClass } from "@/lib/professorColors";
 import { MapPin, Clock, User } from "lucide-react";
 
 interface ScheduleCardProps {
@@ -51,6 +52,8 @@ export function ScheduleCard({ data }: ScheduleCardProps) {
                       ? "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300"
                       : day === "금"
                       ? "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300"
+                      : day === "토"
+                      ? "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300"
                       : "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300"
                   }`}
                 >
@@ -67,8 +70,8 @@ export function ScheduleCard({ data }: ScheduleCardProps) {
                 {entries.map((entry) => (
                   <div
                     key={entry.id}
-                    className={`border-l-4 ${getDepartmentBorderClass(
-                      entry.department
+                    className={`border-l-4 ${getProfessorBorderClass(
+                      entry.professor
                     )} bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-4 hover:shadow-md transition-shadow`}
                   >
                     <div className="flex items-start justify-between mb-2">
@@ -86,6 +89,7 @@ export function ScheduleCard({ data }: ScheduleCardProps) {
                     <div className="space-y-1.5 text-xs text-gray-500 dark:text-gray-400">
                       <div className="flex items-center gap-1.5">
                         <User className="w-3.5 h-3.5" />
+                        <span className={`w-2 h-2 rounded-full shrink-0 ${getProfessorDotClass(entry.professor)}`} />
                         <span>{entry.professor}</span>
                       </div>
                       <div className="flex items-center gap-1.5">

@@ -7,19 +7,38 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getDepartmentColor(dept: Department): string {
-  return dept === "소방" ? "orange" : "blue";
+  switch (dept) {
+    case "소방": return "orange";
+    case "전기": return "blue";
+    case "P-TECH 1학년": return "emerald";
+    case "P-TECH 2학년": return "violet";
+  }
 }
 
 export function getDepartmentBgClass(dept: Department): string {
-  return dept === "소방"
-    ? "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300"
-    : "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300";
+  switch (dept) {
+    case "소방":
+      return "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300";
+    case "전기":
+      return "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300";
+    case "P-TECH 1학년":
+      return "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300";
+    case "P-TECH 2학년":
+      return "bg-violet-100 text-violet-800 dark:bg-violet-900/30 dark:text-violet-300";
+  }
 }
 
 export function getDepartmentBorderClass(dept: Department): string {
-  return dept === "소방"
-    ? "border-l-orange-500"
-    : "border-l-blue-500";
+  switch (dept) {
+    case "소방": return "border-l-orange-500";
+    case "전기": return "border-l-blue-500";
+    case "P-TECH 1학년": return "border-l-emerald-500";
+    case "P-TECH 2학년": return "border-l-violet-500";
+  }
+}
+
+export function isPTECH(dept: Department): boolean {
+  return dept === "P-TECH 1학년" || dept === "P-TECH 2학년";
 }
 
 export function formatPeriods(periods: number[]): string {

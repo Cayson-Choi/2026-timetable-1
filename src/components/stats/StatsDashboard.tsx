@@ -1,7 +1,8 @@
 "use client";
 
-import { ScheduleEntry } from "@/lib/types";
+import { ScheduleEntry, Department } from "@/lib/types";
 import { getProfessorSummaries, getDepartmentBgClass } from "@/lib/utils";
+import { getProfessorBarClass, getProfessorDotClass } from "@/lib/professorColors";
 import { useMemo } from "react";
 import { Users, Clock, BookOpen, Building2, BarChart3 } from "lucide-react";
 
@@ -102,6 +103,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                 <div className="flex items-center justify-between mb-1">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-bold text-gray-400 w-5">{i + 1}</span>
+                    <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getProfessorDotClass(prof.name)}`} />
                     <span className="text-sm font-medium text-gray-900 dark:text-white">
                       {prof.name}
                     </span>
@@ -124,7 +126,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                 </div>
                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-2">
                   <div
-                    className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500"
+                    className={`bg-gradient-to-r ${getProfessorBarClass(prof.name)} h-2 rounded-full transition-all duration-500`}
                     style={{
                       width: `${(prof.totalHours / maxProfHours) * 100}%`,
                     }}
@@ -157,7 +159,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                         <span
                           key={d}
                           className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold ${getDepartmentBgClass(
-                            d as "소방" | "전기"
+                            d as Department
                           )}`}
                         >
                           {d}

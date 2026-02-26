@@ -1,7 +1,7 @@
 "use client";
 
 import { Search, Filter, RotateCcw, ChevronDown } from "lucide-react";
-import { FilterState, Department } from "@/lib/types";
+import { FilterState, DepartmentFilter } from "@/lib/types";
 
 interface ScheduleFilterProps {
   filters: FilterState;
@@ -12,6 +12,39 @@ interface ScheduleFilterProps {
   totalCount: number;
   filteredCount: number;
 }
+
+const departmentButtons: { id: DepartmentFilter; label: string; activeClass: string }[] = [
+  {
+    id: "전체",
+    label: "전체",
+    activeClass: "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 ring-1 ring-gray-300 dark:ring-gray-600",
+  },
+  {
+    id: "소방",
+    label: "소방",
+    activeClass: "bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300 ring-1 ring-orange-300 dark:ring-orange-700",
+  },
+  {
+    id: "전기",
+    label: "전기",
+    activeClass: "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 ring-1 ring-blue-300 dark:ring-blue-700",
+  },
+  {
+    id: "P-TECH",
+    label: "P-TECH",
+    activeClass: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700",
+  },
+  {
+    id: "P-TECH 1학년",
+    label: "P-TECH 1",
+    activeClass: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700",
+  },
+  {
+    id: "P-TECH 2학년",
+    label: "P-TECH 2",
+    activeClass: "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300 ring-1 ring-violet-300 dark:ring-violet-700",
+  },
+];
 
 export function ScheduleFilter({
   filters,
@@ -35,7 +68,7 @@ export function ScheduleFilter({
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
         <input
           type="text"
-          placeholder="교수명, 과목명, 강의실 검색..."
+          placeholder="교수명, 과목명, 강의실, 학과 검색..."
           value={filters.searchQuery}
           onChange={(e) => updateFilter("searchQuery", e.target.value)}
           className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all"
@@ -66,26 +99,22 @@ export function ScheduleFilter({
         </div>
 
         {/* Department */}
-        <div className="relative min-w-[120px]">
+        <div className="relative">
           <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
-            학과
+            학과/과정
           </label>
-          <div className="flex gap-1">
-            {(["전체", "소방", "전기"] as const).map((dept) => (
+          <div className="flex flex-wrap gap-1">
+            {departmentButtons.map((dept) => (
               <button
-                key={dept}
-                onClick={() => updateFilter("department", dept as Department | "전체")}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  filters.department === dept
-                    ? dept === "소방"
-                      ? "bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300 ring-1 ring-orange-300 dark:ring-orange-700"
-                      : dept === "전기"
-                      ? "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 ring-1 ring-blue-300 dark:ring-blue-700"
-                      : "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 ring-1 ring-gray-300 dark:ring-gray-600"
+                key={dept.id}
+                onClick={() => updateFilter("department", dept.id)}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+                  filters.department === dept.id
+                    ? dept.activeClass
                     : "bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
                 }`}
               >
-                {dept}
+                {dept.label}
               </button>
             ))}
           </div>

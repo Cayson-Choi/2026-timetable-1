@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { ScheduleEntry, FilterState, Department } from "@/lib/types";
-import { getUniqueValues } from "@/lib/utils";
+import { ScheduleEntry, FilterState, DepartmentFilter } from "@/lib/types";
+import { getUniqueValues, isPTECH } from "@/lib/utils";
 
 export function useScheduleFilter(data: ScheduleEntry[]) {
   const [filters, setFilters] = useState<FilterState>({
@@ -36,7 +36,12 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
     }
 
     if (filters.department !== "전체") {
-      result = result.filter((d) => d.department === filters.department);
+      if (filters.department === "P-TECH") {
+        // Show both P-TECH 1학년 and P-TECH 2학년
+        result = result.filter((d) => isPTECH(d.department));
+      } else {
+        result = result.filter((d) => d.department === filters.department);
+      }
     }
 
     if (filters.searchQuery) {
@@ -45,7 +50,8 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
         (d) =>
           d.professor.toLowerCase().includes(q) ||
           d.subject.toLowerCase().includes(q) ||
-          d.classroom.toLowerCase().includes(q)
+          d.classroom.toLowerCase().includes(q) ||
+          d.department.toLowerCase().includes(q)
       );
     }
 

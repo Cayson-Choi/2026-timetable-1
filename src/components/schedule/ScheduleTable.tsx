@@ -2,7 +2,17 @@
 
 import { ScheduleEntry } from "@/lib/types";
 import { formatPeriods, getDepartmentBgClass } from "@/lib/utils";
+import { getProfessorDotClass } from "@/lib/professorColors";
 import { MapPin, Clock, BookOpen, User } from "lucide-react";
+
+const DAY_BADGE: Record<string, string> = {
+  "월": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300",
+  "화": "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300",
+  "수": "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300",
+  "목": "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "금": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300",
+  "토": "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300",
+};
 
 interface ScheduleTableProps {
   data: ScheduleEntry[];
@@ -59,17 +69,7 @@ export function ScheduleTable({ data }: ScheduleTableProps) {
               <td className="px-4 py-3 text-gray-600 dark:text-gray-300 whitespace-nowrap">
                 <span
                   className={`inline-flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold ${
-                    entry.day === "월"
-                      ? "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300"
-                      : entry.day === "화"
-                      ? "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300"
-                      : entry.day === "수"
-                      ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300"
-                      : entry.day === "목"
-                      ? "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300"
-                      : entry.day === "금"
-                      ? "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300"
-                      : "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300"
+                    DAY_BADGE[entry.day] ?? "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300"
                   }`}
                 >
                   {entry.day}
@@ -85,8 +85,8 @@ export function ScheduleTable({ data }: ScheduleTableProps) {
                 {entry.subject}
               </td>
               <td className="px-4 py-3 text-gray-700 dark:text-gray-300">
-                <span className="inline-flex items-center gap-1">
-                  <User className="w-3.5 h-3.5 text-gray-400" />
+                <span className="inline-flex items-center gap-1.5">
+                  <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getProfessorDotClass(entry.professor)}`} />
                   {entry.professor}
                 </span>
               </td>
