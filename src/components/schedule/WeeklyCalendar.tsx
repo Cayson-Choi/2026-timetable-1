@@ -19,12 +19,12 @@ const PERIODS_8 = [1, 2, 3, 4, 5, 6, 7, 8];
 const PERIODS_9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const DAY_COLORS: Record<string, { header: string; text: string }> = {
-  "월": { header: "bg-yellow-100 dark:bg-yellow-900/20", text: "text-yellow-700 dark:text-yellow-300" },
-  "화": { header: "bg-pink-100 dark:bg-pink-900/20", text: "text-pink-700 dark:text-pink-300" },
-  "수": { header: "bg-green-100 dark:bg-green-900/20", text: "text-green-700 dark:text-green-300" },
-  "목": { header: "bg-purple-100 dark:bg-purple-900/20", text: "text-purple-700 dark:text-purple-300" },
-  "금": { header: "bg-cyan-100 dark:bg-cyan-900/20", text: "text-cyan-700 dark:text-cyan-300" },
-  "토": { header: "bg-rose-100 dark:bg-rose-900/20", text: "text-rose-700 dark:text-rose-300" },
+  "월": { header: "bg-gray-100 dark:bg-gray-800", text: "text-gray-700 dark:text-gray-300" },
+  "화": { header: "bg-gray-100 dark:bg-gray-800", text: "text-gray-700 dark:text-gray-300" },
+  "수": { header: "bg-gray-100 dark:bg-gray-800", text: "text-gray-700 dark:text-gray-300" },
+  "목": { header: "bg-gray-100 dark:bg-gray-800", text: "text-gray-700 dark:text-gray-300" },
+  "금": { header: "bg-gray-100 dark:bg-gray-800", text: "text-gray-700 dark:text-gray-300" },
+  "토": { header: "bg-gray-100 dark:bg-gray-800", text: "text-gray-700 dark:text-gray-300" },
 };
 
 export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: WeeklyCalendarProps) {
