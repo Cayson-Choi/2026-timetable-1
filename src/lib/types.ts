@@ -23,7 +23,7 @@ export interface ProfessorSummary {
 
 export type ViewMode = "table" | "calendar" | "card";
 
-export type DepartmentFilter = Department | "전체" | "P-TECH";
+export type DepartmentFilter = Department | "전체" | "전문기술" | "P-TECH";
 
 export interface FilterState {
   professor: string;

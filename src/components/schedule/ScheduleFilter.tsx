@@ -20,6 +20,11 @@ const departmentButtons: { id: DepartmentFilter; label: string; activeClass: str
     activeClass: "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 ring-1 ring-gray-300 dark:ring-gray-600",
   },
   {
+    id: "전문기술",
+    label: "전문기술",
+    activeClass: "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300 ring-1 ring-sky-300 dark:ring-sky-700",
+  },
+  {
     id: "소방",
     label: "소방",
     activeClass: "bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300 ring-1 ring-orange-300 dark:ring-orange-700",

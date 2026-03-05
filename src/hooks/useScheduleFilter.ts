@@ -36,8 +36,9 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
     }
 
     if (filters.department !== "전체") {
-      if (filters.department === "P-TECH") {
-        // Show both P-TECH 1학년 and P-TECH 2학년
+      if (filters.department === "전문기술") {
+        result = result.filter((d) => d.department === "소방" || d.department === "전기");
+      } else if (filters.department === "P-TECH") {
         result = result.filter((d) => isPTECH(d.department));
       } else {
         result = result.filter((d) => d.department === filters.department);
