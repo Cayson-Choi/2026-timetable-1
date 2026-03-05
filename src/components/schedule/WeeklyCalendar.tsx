@@ -80,36 +80,69 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
     }
   }
 
+  // Build mobile day groups: day -> unique entries sorted by first period
+  const mobileGroups = useMemo(() => {
+    const groups = new Map<string, ScheduleEntry[]>();
+    for (const day of DAYS) {
+      const dayEntries = weekData.filter((e) => e.day === day);
+      const seen = new Set<string>();
+      const unique = dayEntries.filter((e) => {
+        if (seen.has(e.id)) return false;
+        seen.add(e.id);
+        return true;
+      });
+      unique.sort((a, b) => Math.min(...a.periods) - Math.min(...b.periods));
+      if (unique.length > 0) groups.set(day, unique);
+    }
+    return groups;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [weekData.length, targetWeek]);
+
+  // Week navigation component
+  const WeekNav = () => (
+    <div className="flex items-center justify-center gap-3 mb-4">
+      <button
+        onClick={() => hasPrev && onWeekChange(sortedWeeks[currentIdx - 1])}
+        disabled={!hasPrev}
+        className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
+          hasPrev
+            ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+            : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+        }`}
+      >
+        <ChevronLeft className="w-5 h-5" />
+      </button>
+      <div className="text-center min-w-[140px]">
+        <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+          {targetWeek}주차 시간표
+        </h3>
+        {hasSaturday && (
+          <p className="text-xs text-emerald-600 dark:text-emerald-400 mt-0.5 font-medium">
+            P-TECH 토요일 수업 포함
+          </p>
+        )}
+        <p className="text-xs text-gray-400 mt-0.5">
+          {currentIdx + 1} / {sortedWeeks.length}
+        </p>
+      </div>
+      <button
+        onClick={() => hasNext && onWeekChange(sortedWeeks[currentIdx + 1])}
+        disabled={!hasNext}
+        className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
+          hasNext
+            ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+            : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+        }`}
+      >
+        <ChevronRight className="w-5 h-5" />
+      </button>
+    </div>
+  );
+
   if (weekData.length === 0) {
     return (
       <div className="text-center py-16 text-gray-400 dark:text-gray-500">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <button
-            onClick={() => hasPrev && onWeekChange(sortedWeeks[currentIdx - 1])}
-            disabled={!hasPrev}
-            className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
-              hasPrev
-                ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
-                : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-            }`}
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <span className="text-lg font-bold text-gray-900 dark:text-white min-w-[140px]">
-            {targetWeek}주차
-          </span>
-          <button
-            onClick={() => hasNext && onWeekChange(sortedWeeks[currentIdx + 1])}
-            disabled={!hasNext}
-            className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
-              hasNext
-                ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
-                : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-            }`}
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-        </div>
+        <WeekNav />
         <p className="text-lg font-medium">해당 주차에 수업이 없습니다</p>
         <p className="text-sm mt-1">← → 버튼으로 다른 주차를 확인해 보세요</p>
       </div>
@@ -119,54 +152,19 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
   return (
     <div className="space-y-4">
       {/* Legend - 교수별 색상 안내 */}
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
         {weekProfessors.map(({ name, color }) => (
-          <div key={name} className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-            <div className={`w-3 h-3 rounded-full ${color.dot}`} />
-            <span className="text-xs font-medium text-gray-700 dark:text-gray-300">{name}</span>
+          <div key={name} className="flex items-center gap-1 sm:gap-1.5 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+            <div className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full ${color.dot}`} />
+            <span className="text-[11px] sm:text-xs font-medium text-gray-700 dark:text-gray-300">{name}</span>
           </div>
         ))}
       </div>
 
-      <div className="overflow-x-auto">
+      {/* Desktop: Grid calendar */}
+      <div className="hidden sm:block overflow-x-auto">
         <div className={hasSaturday ? "min-w-[840px]" : "min-w-[700px]"}>
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <button
-              onClick={() => hasPrev && onWeekChange(sortedWeeks[currentIdx - 1])}
-              disabled={!hasPrev}
-              className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
-                hasPrev
-                  ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
-                  : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-              }`}
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <div className="text-center min-w-[140px]">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                {targetWeek}주차 시간표
-              </h3>
-              {hasSaturday && (
-                <p className="text-xs text-emerald-600 dark:text-emerald-400 mt-0.5 font-medium">
-                  P-TECH 토요일 수업 포함
-                </p>
-              )}
-              <p className="text-xs text-gray-400 mt-0.5">
-                {currentIdx + 1} / {sortedWeeks.length}
-              </p>
-            </div>
-            <button
-              onClick={() => hasNext && onWeekChange(sortedWeeks[currentIdx + 1])}
-              disabled={!hasNext}
-              className={`flex items-center justify-center w-9 h-9 rounded-lg transition-all ${
-                hasNext
-                  ? "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
-                  : "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-              }`}
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+          <WeekNav />
 
           <div
             className={`grid ${gridCols} border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden`}
@@ -245,6 +243,66 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
               </React.Fragment>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Mobile: Day-by-day vertical list */}
+      <div className="sm:hidden">
+        <WeekNav />
+        <div className="space-y-4">
+          {DAYS.map((day) => {
+            const entries = mobileGroups.get(day);
+            if (!entries) return null;
+            const dayDate = dayDates.get(day) || "";
+            const today = dayDate ? isTodayByDate(dayDate) : false;
+
+            return (
+              <div key={day}>
+                {/* Day header */}
+                <div className={`flex items-center gap-2 mb-2 px-2 py-1.5 rounded-lg ${
+                  today ? "bg-blue-100 dark:bg-blue-900/30" : "bg-gray-100 dark:bg-gray-800"
+                }`}>
+                  <span className={`font-bold text-sm ${today ? "text-blue-700 dark:text-blue-300" : "text-gray-700 dark:text-gray-300"}`}>
+                    {day}
+                  </span>
+                  <span className={`text-xs ${today ? "text-blue-500 dark:text-blue-400" : "text-gray-500 dark:text-gray-400"}`}>
+                    {dayDate}
+                  </span>
+                  {today && (
+                    <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-500 text-white">
+                      오늘
+                    </span>
+                  )}
+                </div>
+                {/* Entries */}
+                <div className="space-y-1.5 pl-1">
+                  {entries.map((entry) => (
+                    <div
+                      key={entry.id}
+                      className={`rounded-lg p-2.5 text-xs leading-tight ${getProfessorBgClass(entry.professor)}`}
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="min-w-0">
+                          <div className="font-semibold text-sm">{entry.subject}</div>
+                          <div className="opacity-80 mt-0.5">{entry.professor} · {entry.classroom}</div>
+                        </div>
+                        <div className="flex flex-col items-end gap-1 shrink-0">
+                          <span className="text-[11px] font-medium opacity-80">
+                            {entry.periods.length === 1
+                              ? `${entry.periods[0]}교시`
+                              : `${Math.min(...entry.periods)}-${Math.max(...entry.periods)}교시`}
+                          </span>
+                          <span className={`px-1.5 py-0 rounded text-[9px] font-bold ${getDepartmentBgClass(entry.department)}`}>
+                            {entry.department}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

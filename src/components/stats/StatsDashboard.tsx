@@ -49,11 +49,11 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
         ].map(({ icon: Icon, label, value, suffix, color }) => (
           <div
             key={label}
-            className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5"
+            className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-3 sm:p-5"
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               <div
-                className={`w-10 h-10 rounded-lg flex items-center justify-center ${
+                className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center shrink-0 ${
                   color === "blue"
                     ? "bg-blue-100 dark:bg-blue-900/30"
                     : color === "green"
@@ -64,7 +64,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                 }`}
               >
                 <Icon
-                  className={`w-5 h-5 ${
+                  className={`w-4 h-4 sm:w-5 sm:h-5 ${
                     color === "blue"
                       ? "text-blue-600 dark:text-blue-400"
                       : color === "green"
@@ -76,11 +76,11 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                 />
               </div>
               <div>
-                <p className="text-2xl font-bold text-gray-900 dark:text-white">
+                <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
                   {value}
-                  <span className="text-sm font-normal text-gray-400 ml-1">{suffix}</span>
+                  <span className="text-xs sm:text-sm font-normal text-gray-400 ml-1">{suffix}</span>
                 </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+                <p className="text-[11px] sm:text-xs text-gray-500 dark:text-gray-400">{label}</p>
               </div>
             </div>
           </div>
@@ -90,28 +90,28 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
       {/* Two columns: professor ranking & subject ranking */}
       <div className="grid lg:grid-cols-2 gap-6">
         {/* Professor ranking */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5">
-          <div className="flex items-center gap-2 mb-4">
+        <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-3 sm:p-5">
+          <div className="flex items-center gap-2 mb-3 sm:mb-4">
             <BarChart3 className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+            <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
               교수별 수업시수
             </h3>
           </div>
           <div className="space-y-3">
             {summaries.map((prof, i) => (
               <div key={prof.name} className="group">
-                <div className="flex items-center justify-between mb-1">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-gray-400 w-5">{i + 1}</span>
-                    <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getProfessorDotClass(prof.name)}`} />
-                    <span className="text-sm font-medium text-gray-900 dark:text-white">
+                <div className="flex items-center justify-between mb-1 gap-1">
+                  <div className="flex items-center gap-1.5 sm:gap-2 min-w-0 flex-wrap">
+                    <span className="text-xs font-bold text-gray-400 w-4 sm:w-5 shrink-0">{i + 1}</span>
+                    <span className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full shrink-0 ${getProfessorDotClass(prof.name)}`} />
+                    <span className="text-xs sm:text-sm font-medium text-gray-900 dark:text-white">
                       {prof.name}
                     </span>
                     <div className="flex gap-1">
                       {prof.departments.map((d) => (
                         <span
                           key={d}
-                          className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold ${getDepartmentBgClass(
+                          className={`text-[9px] sm:text-[10px] px-1 sm:px-1.5 py-0.5 rounded-full font-semibold ${getDepartmentBgClass(
                             d
                           )}`}
                         >
@@ -120,7 +120,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                       ))}
                     </div>
                   </div>
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                  <span className="text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 shrink-0">
                     {prof.totalHours}h
                   </span>
                 </div>
@@ -138,27 +138,27 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
         </div>
 
         {/* Subject ranking */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5">
-          <div className="flex items-center gap-2 mb-4">
+        <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-3 sm:p-5">
+          <div className="flex items-center gap-2 mb-3 sm:mb-4">
             <BookOpen className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+            <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
               과목별 수업시수
             </h3>
           </div>
           <div className="space-y-3 max-h-[500px] overflow-y-auto pr-1">
             {subjectHours.map((subj, i) => (
               <div key={subj.name}>
-                <div className="flex items-center justify-between mb-1">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-gray-400 w-5">{i + 1}</span>
-                    <span className="text-sm font-medium text-gray-900 dark:text-white truncate max-w-[200px]">
+                <div className="flex items-center justify-between mb-1 gap-1">
+                  <div className="flex items-center gap-1.5 sm:gap-2 min-w-0 flex-wrap">
+                    <span className="text-xs font-bold text-gray-400 w-4 sm:w-5 shrink-0">{i + 1}</span>
+                    <span className="text-xs sm:text-sm font-medium text-gray-900 dark:text-white truncate max-w-[140px] sm:max-w-[200px]">
                       {subj.name}
                     </span>
                     <div className="flex gap-1 shrink-0">
                       {subj.departments.map((d) => (
                         <span
                           key={d}
-                          className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold ${getDepartmentBgClass(
+                          className={`text-[9px] sm:text-[10px] px-1 sm:px-1.5 py-0.5 rounded-full font-semibold ${getDepartmentBgClass(
                             d as Department
                           )}`}
                         >
@@ -167,7 +167,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                       ))}
                     </div>
                   </div>
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 shrink-0 ml-2">
+                  <span className="text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 shrink-0 ml-1">
                     {subj.hours}h
                   </span>
                 </div>

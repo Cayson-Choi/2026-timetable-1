@@ -78,7 +78,7 @@ export function ScheduleFilter({
       {/* Filter Row */}
       <div className="flex flex-wrap gap-3">
         {/* Professor */}
-        <div className="relative flex-1 min-w-[160px]">
+        <div className="relative w-full sm:w-auto sm:flex-1 sm:min-w-[160px]">
           <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
             교수
           </label>
@@ -108,7 +108,7 @@ export function ScheduleFilter({
               <button
                 key={dept.id}
                 onClick={() => updateFilter("department", dept.id)}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+                className={`px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                   filters.department === dept.id
                     ? dept.activeClass
                     : "bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -121,7 +121,7 @@ export function ScheduleFilter({
         </div>
 
         {/* Week */}
-        <div className="relative min-w-[120px]">
+        <div className="relative w-full sm:w-auto sm:min-w-[120px]">
           <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
             주차
           </label>
