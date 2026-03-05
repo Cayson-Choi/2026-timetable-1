@@ -1,7 +1,7 @@
 "use client";
 
 import { ScheduleEntry } from "@/lib/types";
-import { formatPeriods, getDepartmentBgClass } from "@/lib/utils";
+import { formatPeriods, getDepartmentBgClass, isToday } from "@/lib/utils";
 import { getProfessorDotClass } from "@/lib/professorColors";
 import { MapPin, Clock, BookOpen, User } from "lucide-react";
 
@@ -58,13 +58,24 @@ export function ScheduleTable({ data }: ScheduleTableProps) {
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-          {data.map((entry) => (
+          {data.map((entry) => {
+            const today = isToday(entry.sortDate);
+            return (
             <tr
               key={entry.id}
-              className="hover:bg-gray-50 dark:hover:bg-gray-800/30 transition-colors"
+              className={`hover:bg-gray-50 dark:hover:bg-gray-800/30 transition-colors ${
+                today ? "bg-blue-50/70 dark:bg-blue-950/30" : ""
+              }`}
             >
               <td className="px-4 py-3 font-medium text-gray-900 dark:text-white whitespace-nowrap">
-                {entry.date}
+                <span className="inline-flex items-center gap-1.5">
+                  {entry.date}
+                  {today && (
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500 text-white">
+                      오늘
+                    </span>
+                  )}
+                </span>
               </td>
               <td className="px-4 py-3 text-gray-600 dark:text-gray-300 whitespace-nowrap">
                 <span
@@ -106,7 +117,8 @@ export function ScheduleTable({ data }: ScheduleTableProps) {
                 </span>
               </td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </div>

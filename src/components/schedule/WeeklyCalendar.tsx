@@ -3,7 +3,7 @@
 import React, { useMemo } from "react";
 import { ScheduleEntry } from "@/lib/types";
 import { getProfessorBgClass, getAllProfessorColors } from "@/lib/professorColors";
-import { getDepartmentBgClass } from "@/lib/utils";
+import { getDepartmentBgClass, isTodayByDate } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface WeeklyCalendarProps {
@@ -175,14 +175,25 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
             <div className="bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-2" />
             {DAYS.map((day) => {
               const dayColor = DAY_COLORS[day];
+              const dayDate = dayDates.get(day) || "";
+              const today = dayDate ? isTodayByDate(dayDate) : false;
               return (
                 <div
                   key={day}
-                  className={`border-b border-l border-gray-200 dark:border-gray-700 p-2 text-center ${dayColor.header}`}
+                  className={`border-b border-l border-gray-200 dark:border-gray-700 p-2 text-center ${
+                    today ? "bg-blue-100 dark:bg-blue-900/30" : dayColor.header
+                  }`}
                 >
-                  <div className={`font-bold ${dayColor.text}`}>{day}</div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">
-                    {dayDates.get(day) || ""}
+                  <div className={`font-bold ${today ? "text-blue-700 dark:text-blue-300" : dayColor.text}`}>
+                    {day}
+                    {today && (
+                      <span className="ml-1 px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-500 text-white align-middle">
+                        오늘
+                      </span>
+                    )}
+                  </div>
+                  <div className={`text-xs ${today ? "text-blue-500 dark:text-blue-400" : "text-gray-500 dark:text-gray-400"}`}>
+                    {dayDate}
                   </div>
                 </div>
               );
@@ -202,11 +213,15 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
                     seen.add(e.id);
                     return true;
                   });
+                  const dayDate = dayDates.get(day) || "";
+                  const todayCol = dayDate ? isTodayByDate(dayDate) : false;
 
                   return (
                     <div
                       key={`${day}-${period}`}
-                      className="border-b border-l border-gray-200 dark:border-gray-700 p-1 min-h-[60px]"
+                      className={`border-b border-l border-gray-200 dark:border-gray-700 p-1 min-h-[60px] ${
+                        todayCol ? "bg-blue-50/50 dark:bg-blue-950/20" : ""
+                      }`}
                     >
                       {unique.map((entry) => (
                         <div

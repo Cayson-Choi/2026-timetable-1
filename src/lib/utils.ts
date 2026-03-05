@@ -110,3 +110,18 @@ export function dayToNumber(day: string): number {
 export function sortDateString(a: string, b: string): number {
   return a.localeCompare(b);
 }
+
+/** sortDate("2026-03-05") 형식과 오늘 날짜 비교 */
+export function isToday(sortDate: string): boolean {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return sortDate === `${y}-${m}-${d}`;
+}
+
+/** "3/5" 형식의 date와 오늘 날짜 비교 */
+export function isTodayByDate(date: string): boolean {
+  const now = new Date();
+  return date === `${now.getMonth() + 1}/${now.getDate()}`;
+}

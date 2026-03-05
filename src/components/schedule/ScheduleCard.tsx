@@ -5,6 +5,7 @@ import {
   formatPeriods,
   getDepartmentBgClass,
   getDepartmentBorderClass,
+  isToday,
 } from "@/lib/utils";
 import { getProfessorBorderClass, getProfessorDotClass } from "@/lib/professorColors";
 import { MapPin, Clock, User } from "lucide-react";
@@ -36,13 +37,16 @@ export function ScheduleCard({ data }: ScheduleCardProps) {
       {Object.entries(grouped)
         .sort(([a], [b]) => a.localeCompare(b))
         .map(([key, entries]) => {
-          const [, date, day] = key.split("|");
+          const [sortDate, date, day] = key.split("|");
+          const today = isToday(sortDate);
           return (
             <div key={key}>
-              <div className="flex items-center gap-2 mb-3">
+              <div className={`flex items-center gap-2 mb-3 ${today ? "bg-blue-50 dark:bg-blue-950/30 -mx-3 px-3 py-2 rounded-lg" : ""}`}>
                 <div
                   className={`inline-flex items-center justify-center w-8 h-8 rounded-lg text-sm font-bold ${
-                    day === "월"
+                    today
+                      ? "bg-blue-500 text-white"
+                      : day === "월"
                       ? "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300"
                       : day === "화"
                       ? "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300"
@@ -62,6 +66,11 @@ export function ScheduleCard({ data }: ScheduleCardProps) {
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                   {date}
                 </h3>
+                {today && (
+                  <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500 text-white">
+                    오늘
+                  </span>
+                )}
                 <span className="text-sm text-gray-400">
                   ({entries.length}건)
                 </span>
