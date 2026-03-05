@@ -152,20 +152,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 1
   },
   {
-    "id": "s173",
-    "date": "3/6",
-    "day": "금",
-    "periods": [
-      5
-    ],
-    "subject": "공유압제어기초",
-    "professor": "이강희",
-    "classroom": "공유압제어실",
-    "department": "전기",
-    "sortDate": "2026-03-06",
-    "week": 1
-  },
-  {
     "id": "s172",
     "date": "3/6",
     "day": "금",
@@ -174,10 +160,24 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3,
       4,
-      6
+      5
     ],
     "subject": "공유압제어기초",
     "professor": "최무호",
+    "classroom": "공유압제어실",
+    "department": "전기",
+    "sortDate": "2026-03-06",
+    "week": 1
+  },
+  {
+    "id": "s173b",
+    "date": "3/6",
+    "day": "금",
+    "periods": [
+      6
+    ],
+    "subject": "공유압제어기초",
+    "professor": "박명석",
     "classroom": "공유압제어실",
     "department": "전기",
     "sortDate": "2026-03-06",
