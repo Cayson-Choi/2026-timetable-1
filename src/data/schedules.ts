@@ -243,8 +243,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/10",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -290,8 +290,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/10",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -510,8 +510,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/17",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -557,8 +557,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/17",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -829,8 +829,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/24",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -876,8 +876,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/24",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -1191,8 +1191,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/31",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -1238,8 +1238,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "3/31",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -1553,8 +1553,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/7",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -1600,8 +1600,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/7",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -1885,8 +1885,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/14",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -1932,8 +1932,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/14",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -2217,8 +2217,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/21",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -2264,8 +2264,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/21",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
@@ -2575,8 +2575,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/28",
     "day": "화",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5
     ],
     "subject": "전기설비",
@@ -2622,8 +2622,8 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "4/28",
     "day": "화",
     "periods": [
-      1,
-      2
+      3,
+      4
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
