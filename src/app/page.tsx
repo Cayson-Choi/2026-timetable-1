@@ -10,7 +10,7 @@ import { StatsDashboard } from "@/components/stats/StatsDashboard";
 import { useScheduleFilter } from "@/hooks/useScheduleFilter";
 import { scheduleData } from "@/data/schedules";
 import { ViewMode } from "@/lib/types";
-import { Table, LayoutGrid, CalendarDays, Download } from "lucide-react";
+import { Table, LayoutGrid, CalendarDays } from "lucide-react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("schedule");
@@ -23,29 +23,6 @@ export default function Home() {
     updateFilter,
     resetFilters,
   } = useScheduleFilter(scheduleData);
-
-  const handleExportCSV = () => {
-    const headers = ["날짜", "요일", "교시", "과목", "교수", "강의실", "학과"];
-    const rows = filteredData.map((d) => [
-      d.date,
-      d.day,
-      d.periods.join(","),
-      d.subject,
-      d.professor,
-      d.classroom,
-      d.department,
-    ]);
-
-    const bom = "\uFEFF";
-    const csv = bom + [headers, ...rows].map((r) => r.join(",")).join("\n");
-    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "수업일정표.csv";
-    a.click();
-    URL.revokeObjectURL(url);
-  };
 
   const viewModes = [
     { id: "table" as ViewMode, icon: Table, label: "테이블" },
@@ -71,32 +48,22 @@ export default function Home() {
               filteredCount={filteredData.length}
             />
 
-            {/* View mode toggle + Export */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
-                {viewModes.map(({ id, icon: Icon, label }) => (
-                  <button
-                    key={id}
-                    onClick={() => setViewMode(id)}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
-                      viewMode === id
-                        ? "bg-white dark:bg-gray-700 shadow-sm text-blue-600 dark:text-blue-400"
-                        : "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-                    }`}
-                  >
-                    <Icon className="w-4 h-4" />
-                    <span className="hidden sm:inline">{label}</span>
-                  </button>
-                ))}
-              </div>
-
-              <button
-                onClick={handleExportCSV}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium bg-blue-600 hover:bg-blue-700 text-white transition-colors shadow-sm"
-              >
-                <Download className="w-4 h-4" />
-                <span className="hidden sm:inline">CSV 내보내기</span>
-              </button>
+            {/* View mode toggle */}
+            <div className="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-1 w-fit">
+              {viewModes.map(({ id, icon: Icon, label }) => (
+                <button
+                  key={id}
+                  onClick={() => setViewMode(id)}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
+                    viewMode === id
+                      ? "bg-white dark:bg-gray-700 shadow-sm text-blue-600 dark:text-blue-400"
+                      : "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span className="hidden sm:inline">{label}</span>
+                </button>
+              ))}
             </div>
 
             {/* Schedule View */}
