@@ -1,4 +1,4 @@
-export type Department = "소방" | "전기" | "P-TECH 1학년" | "P-TECH 2학년";
+export type Department = "소방" | "전기" | "학위 1학년" | "학위 2학년";
 
 export interface ScheduleEntry {
   id: string;
@@ -23,7 +23,7 @@ export interface ProfessorSummary {
 
 export type ViewMode = "table" | "calendar" | "card";
 
-export type DepartmentFilter = Department | "전체" | "전문기술" | "P-TECH";
+export type DepartmentFilter = Department | "전체" | "전문기술" | "학위과정";
 
 export interface FilterState {
   professor: string;

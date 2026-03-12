@@ -35,18 +35,18 @@ const departmentButtons: { id: DepartmentFilter; label: string; activeClass: str
     activeClass: "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 ring-1 ring-blue-300 dark:ring-blue-700",
   },
   {
-    id: "P-TECH",
-    label: "P-TECH",
+    id: "학위과정",
+    label: "학위과정",
     activeClass: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700",
   },
   {
-    id: "P-TECH 1학년",
-    label: "P-TECH 1",
+    id: "학위 1학년",
+    label: "학위 1",
     activeClass: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700",
   },
   {
-    id: "P-TECH 2학년",
-    label: "P-TECH 2",
+    id: "학위 2학년",
+    label: "학위 2",
     activeClass: "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300 ring-1 ring-violet-300 dark:ring-violet-700",
   },
 ];

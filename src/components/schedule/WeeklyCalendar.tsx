@@ -118,7 +118,7 @@ export function WeeklyCalendar({ data, week, availableWeeks, onWeekChange }: Wee
         </h3>
         {hasSaturday && (
           <p className="text-xs text-emerald-600 dark:text-emerald-400 mt-0.5 font-medium">
-            P-TECH 토요일 수업 포함
+            학위과정 토요일 수업 포함
           </p>
         )}
         <p className="text-xs text-gray-400 mt-0.5">

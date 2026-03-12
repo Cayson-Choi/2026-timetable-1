@@ -38,7 +38,7 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
     if (filters.department !== "전체") {
       if (filters.department === "전문기술") {
         result = result.filter((d) => d.department === "소방" || d.department === "전기");
-      } else if (filters.department === "P-TECH") {
+      } else if (filters.department === "학위과정") {
         result = result.filter((d) => isPTECH(d.department));
       } else {
         result = result.filter((d) => d.department === filters.department);
