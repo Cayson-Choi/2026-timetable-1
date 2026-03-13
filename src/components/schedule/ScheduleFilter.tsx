@@ -40,12 +40,12 @@ const departmentButtons: { id: DepartmentFilter; label: string; activeClass: str
     activeClass: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700",
   },
   {
-    id: "학위 1학년",
+    id: "1학년",
     label: "1학년",
     activeClass: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700",
   },
   {
-    id: "학위 2학년",
+    id: "2학년",
     label: "2학년",
     activeClass: "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300 ring-1 ring-violet-300 dark:ring-violet-700",
   },

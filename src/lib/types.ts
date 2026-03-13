@@ -1,4 +1,4 @@
-export type Department = "소방" | "전기" | "학위 1학년" | "학위 2학년";
+export type Department = "소방" | "전기" | "1학년" | "2학년";
 
 export interface ScheduleEntry {
   id: string;
