@@ -71,12 +71,7 @@ export default function Home() {
               {viewMode === "table" && <ScheduleTable data={filteredData} />}
               {viewMode === "card" && <ScheduleCard data={filteredData} />}
               {viewMode === "calendar" && (
-                <WeeklyCalendar
-                  data={filteredData}
-                  week={filters.week}
-                  availableWeeks={weeks}
-                  onWeekChange={(w) => updateFilter("week", w)}
-                />
+                <WeeklyCalendar data={filteredData} />
               )}
             </div>
           </>
