@@ -111,7 +111,26 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
       result = result.filter((d) => d.week === filters.week);
     }
 
-    return result.sort((a, b) => a.sortDate.localeCompare(b.sortDate));
+    // 교수별 그날 첫 교시를 기준으로 그룹 정렬
+    const profFirstPeriod = new Map<string, number>();
+    for (const entry of result) {
+      const key = `${entry.sortDate}_${entry.professor}`;
+      const min = Math.min(...entry.periods);
+      const existing = profFirstPeriod.get(key);
+      if (existing === undefined || min < existing) {
+        profFirstPeriod.set(key, min);
+      }
+    }
+
+    return result.sort((a, b) => {
+      const dateCompare = a.sortDate.localeCompare(b.sortDate);
+      if (dateCompare !== 0) return dateCompare;
+      const aFirst = profFirstPeriod.get(`${a.sortDate}_${a.professor}`) ?? 0;
+      const bFirst = profFirstPeriod.get(`${b.sortDate}_${b.professor}`) ?? 0;
+      if (aFirst !== bFirst) return aFirst - bFirst;
+      if (a.professor !== b.professor) return a.professor.localeCompare(b.professor);
+      return Math.min(...a.periods) - Math.min(...b.periods);
+    });
   }, [data, filters]);
 
   const updateFilter = <K extends keyof FilterState>(
