@@ -102,15 +102,6 @@ export function getUniqueValues<T>(arr: T[]): T[] {
   return Array.from(new Set(arr));
 }
 
-export function dayToNumber(day: string): number {
-  const map: Record<string, number> = { "월": 1, "화": 2, "수": 3, "목": 4, "금": 5, "토": 6 };
-  return map[day] ?? 0;
-}
-
-export function sortDateString(a: string, b: string): number {
-  return a.localeCompare(b);
-}
-
 /** sortDate("2026-03-05") 형식과 오늘 날짜 비교 */
 export function isToday(sortDate: string): boolean {
   const now = new Date();

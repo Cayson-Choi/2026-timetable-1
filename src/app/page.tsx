@@ -97,7 +97,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-400 dark:text-gray-500">
             <p>2026 스마트전기과 수업일정 관리 시스템</p>
-            <p>한국폴리텍대학</p>
+            <p>한국폴리텍대학 화성캠퍼스</p>
           </div>
         </div>
       </footer>

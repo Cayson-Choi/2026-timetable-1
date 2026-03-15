@@ -20,7 +20,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
 
   // Subject stats
   const subjectHours = useMemo(() => {
-    const map = new Map<string, { hours: number; dept: Set<string> }>();
+    const map = new Map<string, { hours: number; dept: Set<Department> }>();
     for (const entry of data) {
       if (!map.has(entry.subject)) {
         map.set(entry.subject, { hours: 0, dept: new Set() });
@@ -159,7 +159,7 @@ export function StatsDashboard({ data }: StatsDashboardProps) {
                         <span
                           key={d}
                           className={`text-[9px] sm:text-[10px] px-1 sm:px-1.5 py-0.5 rounded-full font-semibold ${getDepartmentBgClass(
-                            d as Department
+                            d
                           )}`}
                         >
                           {d}
