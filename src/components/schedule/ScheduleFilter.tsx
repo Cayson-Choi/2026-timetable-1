@@ -1,12 +1,14 @@
 "use client";
 
-import { Search, Filter, RotateCcw, ChevronDown } from "lucide-react";
-import { FilterState, DepartmentFilter } from "@/lib/types";
+import { Search, RotateCcw, ChevronDown, CalendarDays } from "lucide-react";
+import { FilterState, DepartmentFilter, ViewMode } from "@/lib/types";
 
 interface ScheduleFilterProps {
   filters: FilterState;
   professors: string[];
   weeks: number[];
+  weekDateRanges: Map<number, { startSort: string; endSort: string; start: string; end: string }>;
+  viewMode: ViewMode;
   updateFilter: <K extends keyof FilterState>(key: K, value: FilterState[K]) => void;
   resetFilters: () => void;
   totalCount: number;
@@ -51,10 +53,22 @@ const departmentButtons: { id: DepartmentFilter; label: string; activeClass: str
   },
 ];
 
+const DAY_NAMES = ["일", "월", "화", "수", "목", "금", "토"];
+
+function getTodayDisplay(): string {
+  const now = new Date();
+  const m = now.getMonth() + 1;
+  const d = now.getDate();
+  const day = DAY_NAMES[now.getDay()];
+  return `${m}월 ${d}일 (${day})`;
+}
+
 export function ScheduleFilter({
   filters,
   professors,
   weeks,
+  weekDateRanges,
+  viewMode,
   updateFilter,
   resetFilters,
   totalCount,
@@ -66,9 +80,18 @@ export function ScheduleFilter({
     filters.searchQuery !== "" ||
     filters.week !== null;
 
+  const todayDisplay = getTodayDisplay();
+  const isCalendarView = viewMode === "calendar";
+
   return (
     <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-4 sm:p-5 space-y-4">
-      {/* Search */}
+      {/* Today + Search */}
+      <div className="flex items-center gap-2 text-sm">
+        <CalendarDays className="w-4 h-4 text-blue-500" />
+        <span className="font-medium text-gray-700 dark:text-gray-300">오늘</span>
+        <span className="font-bold text-blue-600 dark:text-blue-400">{todayDisplay}</span>
+      </div>
+
       <div className="relative">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
         <input
@@ -125,29 +148,39 @@ export function ScheduleFilter({
           </div>
         </div>
 
-        {/* Week */}
-        <div className="relative w-full sm:w-auto sm:min-w-[120px]">
-          <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
-            주차
-          </label>
-          <div className="relative">
-            <select
-              value={filters.week ?? ""}
-              onChange={(e) =>
-                updateFilter("week", e.target.value ? Number(e.target.value) : null)
-              }
-              className="w-full appearance-none pl-3 pr-8 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all cursor-pointer"
-            >
-              <option value="">전체</option>
-              {weeks.map((w) => (
-                <option key={w} value={w}>
-                  {w}주차
-                </option>
-              ))}
-            </select>
-            <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+        {/* Week - 캘린더 뷰일 때 숨김 */}
+        {!isCalendarView && (
+          <div className="relative w-full sm:w-auto sm:min-w-[200px]">
+            <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
+              주차
+            </label>
+            <div className="relative">
+              <select
+                value={filters.week ?? ""}
+                onChange={(e) =>
+                  updateFilter("week", e.target.value ? Number(e.target.value) : null)
+                }
+                className="w-full appearance-none pl-3 pr-8 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all cursor-pointer"
+              >
+                <option value="">전체</option>
+                {weeks.map((w) => {
+                  const range = weekDateRanges.get(w);
+                  const rangeStr = range
+                    ? range.start === range.end
+                      ? ` (${range.start})`
+                      : ` (${range.start}~${range.end})`
+                    : "";
+                  return (
+                    <option key={w} value={w}>
+                      {w}주차{rangeStr}
+                    </option>
+                  );
+                })}
+              </select>
+              <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       {/* Result count & Reset */}

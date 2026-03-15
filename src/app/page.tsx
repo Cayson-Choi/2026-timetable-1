@@ -20,6 +20,7 @@ export default function Home() {
     filteredData,
     professors,
     weeks,
+    weekDateRanges,
     updateFilter,
     resetFilters,
   } = useScheduleFilter(scheduleData);
@@ -42,6 +43,8 @@ export default function Home() {
               filters={filters}
               professors={professors}
               weeks={weeks}
+              weekDateRanges={weekDateRanges}
+              viewMode={viewMode}
               updateFilter={updateFilter}
               resetFilters={resetFilters}
               totalCount={scheduleData.length}
@@ -53,7 +56,10 @@ export default function Home() {
               {viewModes.map(({ id, icon: Icon, label }) => (
                 <button
                   key={id}
-                  onClick={() => setViewMode(id)}
+                  onClick={() => {
+                    setViewMode(id);
+                    if (id === "calendar" && filters.week !== null) updateFilter("week", null);
+                  }}
                   className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
                     viewMode === id
                       ? "bg-white dark:bg-gray-700 shadow-sm text-blue-600 dark:text-blue-400"

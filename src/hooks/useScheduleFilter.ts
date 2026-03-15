@@ -4,13 +4,49 @@ import { useState, useMemo } from "react";
 import { ScheduleEntry, FilterState, DepartmentFilter } from "@/lib/types";
 import { getUniqueValues, isPTECH } from "@/lib/utils";
 
+function findCurrentWeek(data: ScheduleEntry[]): number | null {
+  if (data.length === 0) return null;
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  const today = `${y}-${m}-${d}`;
+
+  // 주차별 날짜 범위
+  const ranges = new Map<number, { min: string; max: string }>();
+  for (const entry of data) {
+    const r = ranges.get(entry.week);
+    if (!r) {
+      ranges.set(entry.week, { min: entry.sortDate, max: entry.sortDate });
+    } else {
+      if (entry.sortDate < r.min) r.min = entry.sortDate;
+      if (entry.sortDate > r.max) r.max = entry.sortDate;
+    }
+  }
+
+  const sorted = [...ranges.entries()].sort((a, b) => a[0] - b[0]);
+
+  // 오늘이 포함된 주차 찾기
+  for (const [week, { min, max }] of sorted) {
+    if (today >= min && today <= max) return week;
+  }
+  // 오늘과 가장 가까운 다음 주차
+  for (const [week, { min }] of sorted) {
+    if (min > today) return week;
+  }
+  // 모두 지났으면 마지막 주차
+  return sorted[sorted.length - 1]?.[0] ?? null;
+}
+
 export function useScheduleFilter(data: ScheduleEntry[]) {
+  const initialWeek = useMemo(() => findCurrentWeek(data), [data]);
+
   const [filters, setFilters] = useState<FilterState>({
     professor: "전체",
     department: "전체",
     searchQuery: "",
     dateRange: null,
-    week: null,
+    week: initialWeek,
   });
 
   const professors = useMemo(
@@ -27,6 +63,21 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
     () => getUniqueValues(data.map((d) => d.week)).sort((a, b) => a - b),
     [data]
   );
+
+  // 주차별 날짜 범위 계산
+  const weekDateRanges = useMemo(() => {
+    const ranges = new Map<number, { startSort: string; endSort: string; start: string; end: string }>();
+    for (const entry of data) {
+      const existing = ranges.get(entry.week);
+      if (!existing) {
+        ranges.set(entry.week, { startSort: entry.sortDate, endSort: entry.sortDate, start: entry.date, end: entry.date });
+      } else {
+        if (entry.sortDate < existing.startSort) { existing.startSort = entry.sortDate; existing.start = entry.date; }
+        if (entry.sortDate > existing.endSort) { existing.endSort = entry.sortDate; existing.end = entry.date; }
+      }
+    }
+    return ranges;
+  }, [data]);
 
   const filteredData = useMemo(() => {
     let result = data;
@@ -86,6 +137,7 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
     professors,
     subjects,
     weeks,
+    weekDateRanges,
     updateFilter,
     resetFilters,
   };
