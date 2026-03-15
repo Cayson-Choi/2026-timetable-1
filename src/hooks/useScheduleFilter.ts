@@ -138,6 +138,7 @@ export function useScheduleFilter(data: ScheduleEntry[]) {
     subjects,
     weeks,
     weekDateRanges,
+    initialWeek,
     updateFilter,
     resetFilters,
   };
