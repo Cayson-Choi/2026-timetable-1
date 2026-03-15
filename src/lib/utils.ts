@@ -6,15 +6,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getDepartmentColor(dept: Department): string {
-  switch (dept) {
-    case "소방": return "orange";
-    case "전기": return "blue";
-    case "1학년": return "emerald";
-    case "2학년": return "violet";
-  }
-}
-
 export function getDepartmentBgClass(dept: Department): string {
   switch (dept) {
     case "소방":
@@ -111,8 +102,3 @@ export function isToday(sortDate: string): boolean {
   return sortDate === `${y}-${m}-${d}`;
 }
 
-/** "3/5" 형식의 date와 오늘 날짜 비교 */
-export function isTodayByDate(date: string): boolean {
-  const now = new Date();
-  return date === `${now.getMonth() + 1}/${now.getDate()}`;
-}

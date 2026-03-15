@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { ScheduleEntry } from "@/lib/types";
 import { getProfessorBgClass, getAllProfessorColors } from "@/lib/professorColors";
-import { getDepartmentBgClass, isTodayByDate } from "@/lib/utils";
+import { getDepartmentBgClass } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface MonthlyCalendarProps {
