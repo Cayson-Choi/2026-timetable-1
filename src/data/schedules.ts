@@ -781,8 +781,8 @@ export const scheduleData: ScheduleEntry[] = [
       5,
       6
     ],
-    "subject": "전기산업안전",
-    "professor": "신건진",
+    "subject": "소방시설공사",
+    "professor": "이준상",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-03-23",
@@ -911,8 +911,8 @@ export const scheduleData: ScheduleEntry[] = [
       7,
       8
     ],
-    "subject": "소방시설공사",
-    "professor": "이준상",
+    "subject": "전기산업안전",
+    "professor": "신건진",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-03-24",
@@ -1837,8 +1837,8 @@ export const scheduleData: ScheduleEntry[] = [
       5,
       6
     ],
-    "subject": "전기산업안전",
-    "professor": "신건진",
+    "subject": "소방시설공사",
+    "professor": "이준상",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-04-13",
@@ -1967,8 +1967,8 @@ export const scheduleData: ScheduleEntry[] = [
       7,
       8
     ],
-    "subject": "소방시설공사",
-    "professor": "이준상",
+    "subject": "전기산업안전",
+    "professor": "신건진",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-04-14",
@@ -3668,7 +3668,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "최무호",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-05-21",
     "week": 12
@@ -3755,6 +3755,40 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "박명석",
     "classroom": "내선공사실",
     "department": "전기",
+    "sortDate": "2026-05-26",
+    "week": 13
+  },
+  {
+    "id": "s111",
+    "date": "5/26",
+    "day": "화",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "전기소방설비설계",
+    "professor": "최무호",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-26",
+    "week": 13
+  },
+  {
+    "id": "s111a",
+    "date": "5/26",
+    "day": "화",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "소방기본설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
     "sortDate": "2026-05-26",
     "week": 13
   },
@@ -3898,7 +3932,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "최무호",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-05-28",
     "week": 13
@@ -4153,7 +4187,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "최무호",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-04",
     "week": 14
@@ -4433,7 +4467,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-11",
     "week": 15
@@ -4511,7 +4545,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "최무호",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-11",
     "week": 15
@@ -4753,7 +4787,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-18",
     "week": 16
@@ -4868,7 +4902,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "최무호",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-19",
     "week": 16
@@ -5074,7 +5108,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-25",
     "week": 17
@@ -5142,7 +5176,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-06-26",
     "week": 17
@@ -5343,7 +5377,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-07-02",
     "week": 18
@@ -5396,7 +5430,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-07-03",
     "week": 18
@@ -5489,7 +5523,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "박명석",
-    "classroom": "PLC제어기실",
+    "classroom": "PLC제어실",
     "department": "전기",
     "sortDate": "2026-07-06",
     "week": 19
@@ -5647,46 +5681,6 @@ export const scheduleData: ScheduleEntry[] = [
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-07-09",
-    "week": 19
-  },
-  {
-    "id": "s168",
-    "date": "7/10",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-07-10",
-    "week": 19
-  },
-  {
-    "id": "s340",
-    "date": "7/10",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
-    ],
-    "subject": "전기설비실습",
-    "professor": "박명석",
-    "classroom": "내선공사실",
-    "department": "전기",
-    "sortDate": "2026-07-10",
     "week": 19
   },
   // ============================================
