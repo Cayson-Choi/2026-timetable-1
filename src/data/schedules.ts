@@ -293,7 +293,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-10",
     "week": 2
@@ -308,7 +308,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-10",
     "week": 2
@@ -479,7 +479,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-16",
     "week": 3
@@ -496,7 +496,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-16",
     "week": 3
@@ -560,7 +560,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-17",
     "week": 3
@@ -575,7 +575,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-17",
     "week": 3
@@ -642,7 +642,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-18",
     "week": 3
@@ -658,7 +658,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-18",
     "week": 3
@@ -677,7 +677,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-19",
     "week": 3
@@ -692,7 +692,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-19",
     "week": 3
@@ -707,7 +707,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-03-19",
     "week": 3
@@ -815,7 +815,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-23",
     "week": 4
@@ -832,7 +832,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-23",
     "week": 4
@@ -879,7 +879,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-24",
     "week": 4
@@ -894,7 +894,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-24",
     "week": 4
@@ -961,7 +961,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-25",
     "week": 4
@@ -977,7 +977,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-25",
     "week": 4
@@ -992,7 +992,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "학생 안전교육",
     "professor": "행정처",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-25",
     "week": 4
@@ -1007,7 +1007,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "학생 안전교육",
     "professor": "행정처",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-25",
     "week": 4
@@ -1026,7 +1026,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-26",
     "week": 4
@@ -1041,7 +1041,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-26",
     "week": 4
@@ -1056,7 +1056,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-03-26",
     "week": 4
@@ -1091,7 +1091,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-27",
     "week": 4
@@ -1107,7 +1107,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-27",
     "week": 4
@@ -1158,7 +1158,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-30",
     "week": 5
@@ -1175,7 +1175,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-30",
     "week": 5
@@ -1241,7 +1241,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-03-31",
     "week": 5
@@ -1256,7 +1256,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-31",
     "week": 5
@@ -1290,7 +1290,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "학생 4대 폭력 예방 교육",
     "professor": "교학처",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-01",
     "week": 5
@@ -1305,7 +1305,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "학생 4대 폭력 예방 교육",
     "professor": "교학처",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-01",
     "week": 5
@@ -1353,7 +1353,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-01",
     "week": 5
@@ -1369,7 +1369,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-01",
     "week": 5
@@ -1388,7 +1388,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-02",
     "week": 5
@@ -1403,7 +1403,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-02",
     "week": 5
@@ -1418,7 +1418,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-04-02",
     "week": 5
@@ -1453,7 +1453,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-03",
     "week": 5
@@ -1469,7 +1469,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-03",
     "week": 5
@@ -1539,7 +1539,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-06",
     "week": 6
@@ -1556,7 +1556,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-06",
     "week": 6
@@ -1603,7 +1603,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-07",
     "week": 6
@@ -1618,7 +1618,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-07",
     "week": 6
@@ -1685,7 +1685,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-08",
     "week": 6
@@ -1701,7 +1701,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-08",
     "week": 6
@@ -1720,7 +1720,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-09",
     "week": 6
@@ -1735,7 +1735,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-09",
     "week": 6
@@ -1750,7 +1750,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-04-09",
     "week": 6
@@ -1785,7 +1785,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-10",
     "week": 6
@@ -1801,7 +1801,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-10",
     "week": 6
@@ -1871,7 +1871,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-13",
     "week": 7
@@ -1888,7 +1888,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-13",
     "week": 7
@@ -1935,7 +1935,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-14",
     "week": 7
@@ -1950,7 +1950,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-14",
     "week": 7
@@ -2017,7 +2017,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-15",
     "week": 7
@@ -2033,7 +2033,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-15",
     "week": 7
@@ -2052,7 +2052,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-16",
     "week": 7
@@ -2067,7 +2067,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-16",
     "week": 7
@@ -2082,7 +2082,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-04-16",
     "week": 7
@@ -2117,7 +2117,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-17",
     "week": 7
@@ -2133,7 +2133,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-17",
     "week": 7
@@ -2203,7 +2203,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-20",
     "week": 8
@@ -2220,7 +2220,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-20",
     "week": 8
@@ -2267,7 +2267,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-21",
     "week": 8
@@ -2282,7 +2282,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-21",
     "week": 8
@@ -2349,7 +2349,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-22",
     "week": 8
@@ -2365,7 +2365,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-22",
     "week": 8
@@ -2384,7 +2384,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-23",
     "week": 8
@@ -2399,7 +2399,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-23",
     "week": 8
@@ -2414,7 +2414,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-04-23",
     "week": 8
@@ -2449,7 +2449,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-24",
     "week": 8
@@ -2465,7 +2465,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-24",
     "week": 8
@@ -2498,7 +2498,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-27",
     "week": 9
@@ -2513,7 +2513,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-27",
     "week": 9
@@ -2563,7 +2563,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-27",
     "week": 9
@@ -2578,7 +2578,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-27",
     "week": 9
@@ -2625,7 +2625,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-28",
     "week": 9
@@ -2640,7 +2640,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-28",
     "week": 9
@@ -2707,7 +2707,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-29",
     "week": 9
@@ -2723,7 +2723,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-29",
     "week": 9
@@ -2742,7 +2742,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설점검행정",
     "professor": "박명석",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-30",
     "week": 9
@@ -2757,7 +2757,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-30",
     "week": 9
@@ -2772,7 +2772,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-04-30",
     "week": 9
@@ -2823,7 +2823,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-04",
     "week": 10
@@ -2840,7 +2840,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-04",
     "week": 10
@@ -2907,7 +2907,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-06",
     "week": 10
@@ -2923,7 +2923,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-06",
     "week": 10
@@ -2937,7 +2937,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-07",
     "week": 10
@@ -2951,7 +2951,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "건강과능력개발",
     "professor": "박수명",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-07",
     "week": 10
@@ -2984,7 +2984,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-07",
     "week": 10
@@ -2999,7 +2999,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-05-07",
     "week": 10
@@ -3033,7 +3033,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-08",
     "week": 10
@@ -3049,7 +3049,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-08",
     "week": 10
@@ -3083,7 +3083,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-11",
     "week": 11
@@ -3098,7 +3098,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-11",
     "week": 11
@@ -3239,7 +3239,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-13",
     "week": 11
@@ -3255,7 +3255,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-13",
     "week": 11
@@ -3289,7 +3289,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-14",
     "week": 11
@@ -3304,7 +3304,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-05-14",
     "week": 11
@@ -3339,7 +3339,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-15",
     "week": 11
@@ -3355,7 +3355,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-15",
     "week": 11
@@ -3389,7 +3389,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-18",
     "week": 12
@@ -3404,7 +3404,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-18",
     "week": 12
@@ -3584,7 +3584,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-20",
     "week": 12
@@ -3600,7 +3600,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-20",
     "week": 12
@@ -3634,7 +3634,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-21",
     "week": 12
@@ -3649,7 +3649,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "AI와윤리",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-05-21",
     "week": 12
@@ -3684,7 +3684,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-22",
     "week": 12
@@ -3700,7 +3700,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-22",
     "week": 12
@@ -3759,27 +3759,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 13
   },
   {
-    "id": "s111",
-    "date": "5/26",
-    "day": "화",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
-    ],
-    "subject": "소방시설공사",
-    "professor": "이준상",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-05-26",
-    "week": 13
-  },
-  {
     "id": "s112",
     "date": "5/27",
     "day": "수",
@@ -3822,7 +3801,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-27",
     "week": 13
@@ -3838,9 +3817,24 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-05-27",
+    "week": 13
+  },
+  {
+    "id": "s115a",
+    "date": "5/28",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "소방시설공사",
+    "professor": "이준상",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-28",
     "week": 13
   },
   {
@@ -3848,8 +3842,6 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "5/28",
     "day": "목",
     "periods": [
-      3,
-      4,
       5,
       6,
       7,
@@ -3872,7 +3864,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설설계",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-28",
     "week": 13
@@ -3887,7 +3879,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-05-28",
     "week": 13
@@ -3922,7 +3914,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-29",
     "week": 13
@@ -3938,7 +3930,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-29",
     "week": 13
@@ -3972,7 +3964,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-01",
     "week": 14
@@ -3987,7 +3979,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-01",
     "week": 14
@@ -4004,7 +3996,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-01",
     "week": 14
@@ -4019,7 +4011,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-01",
     "week": 14
@@ -4036,8 +4028,8 @@ export const scheduleData: ScheduleEntry[] = [
       7,
       8
     ],
-    "subject": "전기소방설비설계",
-    "professor": "최무호",
+    "subject": "소방시설공사",
+    "professor": "이준상",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-06-01",
@@ -4127,7 +4119,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설설계",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-04",
     "week": 14
@@ -4142,7 +4134,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-06-04",
     "week": 14
@@ -4177,7 +4169,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-05",
     "week": 14
@@ -4193,7 +4185,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-05",
     "week": 14
@@ -4240,7 +4232,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-08",
     "week": 15
@@ -4255,7 +4247,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-08",
     "week": 15
@@ -4286,7 +4278,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기이론",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-08",
     "week": 15
@@ -4300,7 +4292,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "기초전기전자실습",
     "professor": "정은성",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-08",
     "week": 15
@@ -4409,7 +4401,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-10",
     "week": 15
@@ -4425,7 +4417,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-10",
     "week": 15
@@ -4488,7 +4480,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설설계",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-11",
     "week": 15
@@ -4503,7 +4495,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-06-11",
     "week": 15
@@ -4535,7 +4527,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-12",
     "week": 15
@@ -4551,7 +4543,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-12",
     "week": 15
@@ -4585,7 +4577,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-15",
     "week": 16
@@ -4600,7 +4592,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-15",
     "week": 16
@@ -4728,7 +4720,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-17",
     "week": 16
@@ -4744,7 +4736,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-17",
     "week": 16
@@ -4810,7 +4802,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설설계",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-18",
     "week": 16
@@ -4825,7 +4817,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-06-18",
     "week": 16
@@ -4841,7 +4833,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-19",
     "week": 16
@@ -4857,7 +4849,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-19",
     "week": 16
@@ -4891,7 +4883,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-22",
     "week": 17
@@ -4906,7 +4898,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-22",
     "week": 17
@@ -5049,7 +5041,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-24",
     "week": 17
@@ -5063,7 +5055,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "전기기기",
     "professor": "이대우",
-    "classroom": "401호",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-24",
     "week": 17
@@ -5116,7 +5108,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설설계",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-25",
     "week": 17
@@ -5131,7 +5123,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "PLC제어기초",
     "professor": "이수민",
-    "classroom": "캐드실",
+    "classroom": "CAD컴퓨터실",
     "department": "전기",
     "sortDate": "2026-06-25",
     "week": 17
@@ -5166,7 +5158,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-26",
     "week": 17
@@ -5182,7 +5174,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-26",
     "week": 17
@@ -5197,7 +5189,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-29",
     "week": 18
@@ -5212,7 +5204,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-06-29",
     "week": 18
@@ -5385,7 +5377,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방시설설계",
     "professor": "이수민",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-07-02",
     "week": 18
@@ -5418,7 +5410,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방설비",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-07-03",
     "week": 18
@@ -5432,7 +5424,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "소방이론",
     "professor": "박민우",
-    "classroom": "402호",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-07-03",
     "week": 18
@@ -5464,7 +5456,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-07-06",
     "week": 19
@@ -5479,7 +5471,7 @@ export const scheduleData: ScheduleEntry[] = [
     ],
     "subject": "직업과사회",
     "professor": "권오연",
-    "classroom": "미지정",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-07-06",
     "week": 19
@@ -5655,6 +5647,46 @@ export const scheduleData: ScheduleEntry[] = [
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-07-09",
+    "week": 19
+  },
+  {
+    "id": "s168",
+    "date": "7/10",
+    "day": "금",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-07-10",
+    "week": 19
+  },
+  {
+    "id": "s340",
+    "date": "7/10",
+    "day": "금",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "subject": "전기설비실습",
+    "professor": "박명석",
+    "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-07-10",
     "week": 19
   },
   // ============================================
