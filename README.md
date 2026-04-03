@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 2026 스마트전기과 수업일정 관리 시스템
 
-## Getting Started
+한국폴리텍대학 화성캠퍼스 스마트전기과의 2026학년도 1학기 수업 시간표를 관리하고 조회하는 웹 애플리케이션입니다.
 
-First, run the development server:
+## 주요 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 뷰 모드
+- **테이블**: 수업 목록을 테이블 형태로 조회
+- **카드**: 날짜별 카드 레이아웃으로 조회
+- **캘린더**: 실제 달력 형태의 월별 시간표 조회 (데스크탑: 날짜 칸에 수업 표시, 모바일: 날짜 터치 시 상세 보기)
+
+### 필터링
+- **학과/과정**: 전체, 전문기술(소방+전기), 소방, 전기, 학위과정(1학년+2학년), 학위 1학년, 학위 2학년
+- **교수**: 드롭다운 선택
+- **주차**: 날짜 범위 포함 표시 (예: "3주차 (3/16~3/20)"), 캘린더 뷰에서는 숨김
+- **검색**: 교수명, 과목명, 강의실, 학과 통합 검색
+
+### UX
+- 오늘 날짜 자동 표시 및 해당 주차 자동 선택
+- 오늘 날짜 강조 (테이블/카드/캘린더 모든 뷰)
+- 교수별 17가지 고유 색상
+- 다크모드 지원
+- 모바일 반응형 디자인
+
+### 데이터
+- 소방반, 전기반: 평일 수업 (1~8교시)
+- 학위 1학년, 학위 2학년: 토요일 수업 (1~9교시, OFF-JT)
+- 통계 대시보드: 교수별/과목별 시간 분석
+
+## 기술 스택
+
+- **프레임워크**: Next.js 16 (App Router) + React 19
+- **언어**: TypeScript
+- **스타일링**: Tailwind CSS 4
+- **아이콘**: Lucide React
+- **배포**: Vercel
+
+## 프로젝트 구조
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # 루트 레이아웃 (폰트, 테마)
+│   └── page.tsx            # 메인 페이지 (뷰 모드 전환, 필터 연결)
+├── components/
+│   ├── layout/
+│   │   └── Header.tsx      # 상단 헤더 (탭 전환: 시간표/통계)
+│   ├── schedule/
+│   │   ├── ScheduleFilter.tsx   # 필터 UI (검색, 교수, 학과, 주차)
+│   │   ├── ScheduleTable.tsx    # 테이블 뷰 (데스크탑: 7열 테이블, 모바일: 카드형)
+│   │   ├── ScheduleCard.tsx     # 카드 뷰 (날짜별 그룹핑)
+│   │   └── WeeklyCalendar.tsx   # 캘린더 뷰 (월별 달력, 일요일 시작)
+│   ├── stats/
+│   │   └── StatsDashboard.tsx   # 통계 대시보드
+│   └── theme/
+│       ├── ThemeProvider.tsx    # 다크모드 Provider
+│       └── ThemeToggle.tsx      # 다크모드 토글 버튼
+├── data/
+│   └── schedules.ts        # 전체 수업 데이터 (소방, 전기, 학위 1/2학년)
+├── hooks/
+│   └── useScheduleFilter.ts # 필터 로직 (정렬: 날짜→교수별 첫 교시→교시)
+└── lib/
+    ├── types.ts             # 타입 정의 (Department, ScheduleEntry, FilterState 등)
+    ├── utils.ts             # 유틸리티 (교시 포맷, 학과 색상, 오늘 날짜 등)
+    └── professorColors.ts   # 교수별 색상 매핑 (17색)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 학과/과정 구분
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| 코드 | 학과/과정 | 수업일 | 교시 |
+|------|---------|--------|------|
+| 소방 | 전문기술과정 소방설비전기직종 | 월~금 | 1~8교시 |
+| 전기 | 전문기술과정 전기시스템제어직종 | 월~금 | 1~8교시 |
+| 1학년 | 학위과정(P-TECH) ICT융합제어 1학년 | 토 | 1~9교시 |
+| 2학년 | 학위과정(P-TECH) ICT융합제어 2학년 | 토 | 1~9교시 |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 강의실 명칭
 
-## Learn More
+| 코드 | 위치 |
+|------|------|
+| 전력전자실 | 1공학관 전력전자제어전기측정실 |
+| 강의실-1 | 1공학관 강의실-1 (전기반 이론 수업) |
+| 강의실-2 | 1공학관 강의실-2 (소방반 이론 수업) |
+| 내선공사실 | 1공학관 내선공사실 |
+| 시퀀스제어실 | 1공학관 시퀀스제어실 (전기반 전용) |
+| 공유압제어실 | 1공학관 공유압제어실 |
+| 스마트그리드실 | 1공학관 스마트그리드실 |
+| CAD컴퓨터실 | 1공학관 CAD컴퓨터실 |
+| PLC제어실 | 1공학관 PLC제어실 |
+| 401호 | 1공학관 강의실401 (학위 1학년) |
+| 402호 | 1공학관 강의실402 (학위 2학년) |
+| cad실 | CAD, 컴퓨터실 (학위 2학년) |
 
-To learn more about Next.js, take a look at the following resources:
+## 개발 환경
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# 의존성 설치
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 개발 서버 실행
+npm run dev
 
-## Deploy on Vercel
+# 빌드
+npm run build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 프로덕션 서버
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 데이터 소스
+
+수업 데이터는 다음 PDF 시간표를 기준으로 작성되었습니다:
+
+- `polytime/전문기술과정 소방반.pdf` (19페이지, 1~19주차)
+- `polytime/전문기술과정 전기반.pdf` (19페이지, 1~19주차)
+- `polytime/학위 1학년.pdf` (18페이지)
+- `polytime/학위 2학년.pdf` (20페이지)
+
+### 휴일 (수업 없음)
+- 5/1 (금) 근로자의 날
+- 5/5 (화) 어린이날
+- 5/25 (월) 석가탄신일 대체공휴일
+- 6/6 (토) 현충일
+
+## 배포
+
+Vercel에 자동 배포됩니다. GitHub `main` 브랜치에 push하면 자동으로 빌드 및 배포됩니다.
+
+> Vercel Hobby 플랜에서는 저장소가 **public**이어야 자동 배포가 작동합니다.
