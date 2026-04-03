@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { ScheduleEntry } from "@/lib/types";
 import { getProfessorBgClass, getAllProfessorColors } from "@/lib/professorColors";
-import { getDepartmentBgClass } from "@/lib/utils";
+import { getDepartmentBgClass, formatPeriods } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface MonthlyCalendarProps {
@@ -235,10 +235,10 @@ export function WeeklyCalendar({ data }: MonthlyCalendarProps) {
                           <div
                             key={entry.id}
                             className={`rounded px-1.5 py-1 text-[10px] leading-tight cursor-default ${getProfessorBgClass(entry.professor)}`}
-                            title={`${entry.subject} - ${entry.professor} (${entry.classroom}) [${entry.department}] ${Math.min(...entry.periods)}-${Math.max(...entry.periods)}교시`}
+                            title={`${entry.subject} - ${entry.professor} (${entry.classroom}) [${entry.department}] ${formatPeriods(entry.periods)}`}
                           >
                             <div className="font-semibold truncate">{entry.subject}</div>
-                            <div className="opacity-75 truncate">{entry.professor} · {entry.periods.length === 1 ? `${entry.periods[0]}교시` : `${Math.min(...entry.periods)}-${Math.max(...entry.periods)}교시`}</div>
+                            <div className="opacity-75 truncate">{entry.professor} · {formatPeriods(entry.periods)}</div>
                           </div>
                         ))}
                       </div>
@@ -355,9 +355,7 @@ export function WeeklyCalendar({ data }: MonthlyCalendarProps) {
                     </div>
                     <div className="flex flex-col items-end gap-1 shrink-0">
                       <span className="text-[11px] font-medium opacity-80">
-                        {entry.periods.length === 1
-                          ? `${entry.periods[0]}교시`
-                          : `${Math.min(...entry.periods)}-${Math.max(...entry.periods)}교시`}
+                        {formatPeriods(entry.periods)}
                       </span>
                       <span className={`px-1.5 py-0 rounded text-[9px] font-bold ${getDepartmentBgClass(entry.department)}`}>
                         {entry.department}
