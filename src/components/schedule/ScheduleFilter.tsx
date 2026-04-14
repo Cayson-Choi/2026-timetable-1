@@ -51,6 +51,11 @@ const departmentButtons: { id: DepartmentFilter; label: string; activeClass: str
     label: "2학년",
     activeClass: "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300 ring-1 ring-violet-300 dark:ring-violet-700",
   },
+  {
+    id: "중장년",
+    label: "중장년",
+    activeClass: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 ring-1 ring-amber-300 dark:ring-amber-700",
+  },
 ];
 
 const DAY_NAMES = ["일", "월", "화", "수", "목", "금", "토"];

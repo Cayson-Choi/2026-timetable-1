@@ -16,6 +16,8 @@ export function getDepartmentBgClass(dept: Department): string {
       return "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300";
     case "2학년":
       return "bg-violet-100 text-violet-800 dark:bg-violet-900/30 dark:text-violet-300";
+    case "중장년":
+      return "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300";
   }
 }
 
@@ -25,6 +27,7 @@ export function getDepartmentBorderClass(dept: Department): string {
     case "전기": return "border-l-blue-500";
     case "1학년": return "border-l-emerald-500";
     case "2학년": return "border-l-violet-500";
+    case "중장년": return "border-l-amber-500";
   }
 }
 
