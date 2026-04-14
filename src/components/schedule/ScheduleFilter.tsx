@@ -54,7 +54,7 @@ const departmentButtons: { id: DepartmentFilter; label: string; activeClass: str
   {
     id: "중장년",
     label: "중장년",
-    activeClass: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 ring-1 ring-amber-300 dark:ring-amber-700",
+    activeClass: "bg-pink-100 text-pink-700 dark:bg-pink-900/40 dark:text-pink-300 ring-1 ring-pink-300 dark:ring-pink-700",
   },
 ];
 
