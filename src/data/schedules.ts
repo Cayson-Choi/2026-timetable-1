@@ -3134,8 +3134,8 @@ export const scheduleData: ScheduleEntry[] = [
       7,
       8
     ],
-    "subject": "전기소방설비설계",
-    "professor": "최무호",
+    "subject": "소방시설공사",
+    "professor": "이준상",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-05-11",
@@ -3176,7 +3176,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 11
   },
   {
-    "id": "s93",
+    "id": "s93a",
     "date": "5/12",
     "day": "화",
     "periods": [
@@ -3185,7 +3185,20 @@ export const scheduleData: ScheduleEntry[] = [
       3,
       4,
       5,
-      6,
+      6
+    ],
+    "subject": "전기소방설비설계",
+    "professor": "최무호",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-12",
+    "week": 11
+  },
+  {
+    "id": "s93",
+    "date": "5/12",
+    "day": "화",
+    "periods": [
       7,
       8
     ],
@@ -3462,12 +3475,25 @@ export const scheduleData: ScheduleEntry[] = [
     "periods": [
       3,
       4,
-      7,
-      8
+      7
     ],
     "subject": "전기소방설비설계",
     "professor": "이강희",
     "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-18",
+    "week": 12
+  },
+  {
+    "id": "s102a",
+    "date": "5/18",
+    "day": "월",
+    "periods": [
+      8
+    ],
+    "subject": "소방이론",
+    "professor": "박민우",
+    "classroom": "스마트그리드실",
     "department": "소방",
     "sortDate": "2026-05-18",
     "week": 12
@@ -3695,12 +3721,25 @@ export const scheduleData: ScheduleEntry[] = [
     "day": "금",
     "periods": [
       4,
-      5,
-      6
+      5
     ],
     "subject": "소방이론",
     "professor": "박민우",
     "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-22",
+    "week": 12
+  },
+  {
+    "id": "s110a",
+    "date": "5/22",
+    "day": "금",
+    "periods": [
+      6
+    ],
+    "subject": "전기소방설비설계",
+    "professor": "이강희",
+    "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-05-22",
     "week": 12
@@ -3813,13 +3852,26 @@ export const scheduleData: ScheduleEntry[] = [
     "date": "5/27",
     "day": "수",
     "periods": [
-      4,
-      5,
-      6
+      4
     ],
     "subject": "시퀀스제어실습",
     "professor": "이강희",
     "classroom": "시퀀스제어실",
+    "department": "전기",
+    "sortDate": "2026-05-27",
+    "week": 13
+  },
+  {
+    "id": "s283a",
+    "date": "5/27",
+    "day": "수",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
     "sortDate": "2026-05-27",
     "week": 13
@@ -3977,13 +4029,26 @@ export const scheduleData: ScheduleEntry[] = [
       1,
       2,
       3,
-      4,
-      5,
-      6
+      4
     ],
     "subject": "수변전실습",
     "professor": "변상호",
     "classroom": "스마트그리드실",
+    "department": "전기",
+    "sortDate": "2026-05-29",
+    "week": 13
+  },
+  {
+    "id": "s286a",
+    "date": "5/29",
+    "day": "금",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "시퀀스제어실",
     "department": "전기",
     "sortDate": "2026-05-29",
     "week": 13
@@ -4343,8 +4408,8 @@ export const scheduleData: ScheduleEntry[] = [
       7,
       8
     ],
-    "subject": "전기소방설비설계",
-    "professor": "최무호",
+    "subject": "소방시설공사",
+    "professor": "이준상",
     "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-06-08",
@@ -4372,7 +4437,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 15
   },
   {
-    "id": "s127",
+    "id": "s127a",
     "date": "6/9",
     "day": "화",
     "periods": [
@@ -4381,7 +4446,20 @@ export const scheduleData: ScheduleEntry[] = [
       3,
       4,
       5,
-      6,
+      6
+    ],
+    "subject": "전기소방설비설계",
+    "professor": "최무호",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-09",
+    "week": 15
+  },
+  {
+    "id": "s127",
+    "date": "6/9",
+    "day": "화",
+    "periods": [
       7,
       8
     ],
@@ -5735,9 +5813,9 @@ export const scheduleData: ScheduleEntry[] = [
   { id: "pt-2", date: "3/7", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "인터페이스제작", professor: "박명석", classroom: "PLC제어", department: "2학년", sortDate: "2026-03-07", week: 1 },
   { id: "pt-3", date: "3/14", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "품질검사", professor: "이강희", classroom: "401호", department: "1학년", sortDate: "2026-03-14", week: 2 },
   { id: "pt-4", date: "3/14", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어응용", professor: "이대우", classroom: "402호", department: "2학년", sortDate: "2026-03-14", week: 2 },
-  { id: "pt-5", date: "3/21", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "공업경영학", professor: "신건진", classroom: "PLC제어", department: "1학년", sortDate: "2026-03-21", week: 3 },
+  { id: "pt-5", date: "3/21", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어공사실습", professor: "우정윤", classroom: "내선공사실", department: "1학년", sortDate: "2026-03-21", week: 3 },
   { id: "pt-6", date: "3/21", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "러닝팩토리세미나(PBL)", professor: "이강희", classroom: "시퀀스", department: "2학년", sortDate: "2026-03-21", week: 3 },
-  { id: "pt-7", date: "3/28", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어공사실습", professor: "우정윤", classroom: "내선공사실", department: "1학년", sortDate: "2026-03-28", week: 4 },
+  { id: "pt-7", date: "3/28", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "공업경영학", professor: "신건진", classroom: "PLC제어", department: "1학년", sortDate: "2026-03-28", week: 4 },
   { id: "pt-8", date: "3/28", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "PLC기본운영", professor: "최무호", classroom: "cad실", department: "2학년", sortDate: "2026-03-28", week: 4 },
   { id: "pt-9", date: "4/4", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "통합시스템제작", professor: "민경성", classroom: "401호", department: "1학년", sortDate: "2026-04-04", week: 5 },
   { id: "pt-10", date: "4/4", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어응용", professor: "이대우", classroom: "402호", department: "2학년", sortDate: "2026-04-04", week: 5 },
@@ -5748,9 +5826,9 @@ export const scheduleData: ScheduleEntry[] = [
   { id: "pt-15", date: "4/25", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어공사실습", professor: "우정윤", classroom: "내선공사실", department: "1학년", sortDate: "2026-04-25", week: 8 },
   { id: "pt-16", date: "4/25", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "PLC기본운영", professor: "최무호", classroom: "PLC제어", department: "2학년", sortDate: "2026-04-25", week: 8 },
   { id: "pt-17", date: "5/9", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "통합시스템제작", professor: "민경성", classroom: "PLC제어", department: "1학년", sortDate: "2026-05-09", week: 10 },
-  { id: "pt-18", date: "5/9", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어응용", professor: "이대우", classroom: "전력전자", department: "2학년", sortDate: "2026-05-09", week: 10 },
+  { id: "pt-18", date: "5/9", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "인터페이스제작", professor: "박명석", classroom: "시퀀스제어실습실", department: "2학년", sortDate: "2026-05-09", week: 10 },
   { id: "pt-19", date: "5/16", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "공업경영학", professor: "신건진", classroom: "401호", department: "1학년", sortDate: "2026-05-16", week: 11 },
-  { id: "pt-20", date: "5/16", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "인터페이스제작", professor: "박명석", classroom: "PLC제어", department: "2학년", sortDate: "2026-05-16", week: 11 },
+  { id: "pt-20", date: "5/16", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "제어응용", professor: "이대우", classroom: "전력전자", department: "2학년", sortDate: "2026-05-16", week: 11 },
   { id: "pt-21", date: "5/23", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "원가산정실습", professor: "최무호", classroom: "401호", department: "1학년", sortDate: "2026-05-23", week: 12 },
   { id: "pt-22", date: "5/23", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "러닝팩토리세미나(PBL)", professor: "이강희", classroom: "402호", department: "2학년", sortDate: "2026-05-23", week: 12 },
   { id: "pt-23", date: "5/30", day: "토", periods: [1, 2, 3, 4, 5, 6, 7, 8, 9], subject: "품질검사", professor: "이강희", classroom: "401호", department: "1학년", sortDate: "2026-05-30", week: 13 },
