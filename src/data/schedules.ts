@@ -1,6 +1,7 @@
 import { ScheduleEntry } from "@/lib/types";
 
 export const scheduleData: ScheduleEntry[] = [
+
   {
     "id": "s168",
     "date": "3/3",
@@ -146,25 +147,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 1
   },
   {
-    "id": "s4",
-    "date": "3/6",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-03-06",
-    "week": 1
-  },
-  {
     "id": "s172",
     "date": "3/6",
     "day": "금",
@@ -197,6 +179,25 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 1
   },
   {
+    "id": "s4",
+    "date": "3/6",
+    "day": "금",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-06",
+    "week": 1
+  },
+  {
     "id": "s174",
     "date": "3/9",
     "day": "월",
@@ -214,21 +215,6 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "박명석",
     "classroom": "내선공사실",
     "department": "전기",
-    "sortDate": "2026-03-09",
-    "week": 2
-  },
-  {
-    "id": "s6",
-    "date": "3/9",
-    "day": "월",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
     "sortDate": "2026-03-09",
     "week": 2
   },
@@ -252,6 +238,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 2
   },
   {
+    "id": "s6",
+    "date": "3/9",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-09",
+    "week": 2
+  },
+  {
     "id": "s176",
     "date": "3/10",
     "day": "화",
@@ -263,6 +264,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-03-10",
+    "week": 2
+  },
+  {
+    "id": "s175",
+    "date": "3/10",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-10",
     "week": 2
@@ -295,21 +311,6 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "박수명",
     "classroom": "강의실-2",
     "department": "소방",
-    "sortDate": "2026-03-10",
-    "week": 2
-  },
-  {
-    "id": "s175",
-    "date": "3/10",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
     "sortDate": "2026-03-10",
     "week": 2
   },
@@ -413,25 +414,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 2
   },
   {
-    "id": "s11",
-    "date": "3/13",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-03-13",
-    "week": 2
-  },
-  {
     "id": "s180",
     "date": "3/13",
     "day": "금",
@@ -451,21 +433,23 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 2
   },
   {
-    "id": "s13",
-    "date": "3/16",
-    "day": "월",
+    "id": "s11",
+    "date": "3/13",
+    "day": "금",
     "periods": [
+      1,
+      2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "전기소방설비유지보수",
+    "subject": "시퀀스제어실습",
     "professor": "이강희",
     "classroom": "전력전자실",
     "department": "소방",
-    "sortDate": "2026-03-16",
-    "week": 3
+    "sortDate": "2026-03-13",
+    "week": 2
   },
   {
     "id": "s181",
@@ -519,6 +503,23 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
+    "id": "s13",
+    "date": "3/16",
+    "day": "월",
+    "periods": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-16",
+    "week": 3
+  },
+  {
     "id": "s184",
     "date": "3/17",
     "day": "화",
@@ -530,6 +531,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-03-17",
+    "week": 3
+  },
+  {
+    "id": "s183",
+    "date": "3/17",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-17",
     "week": 3
@@ -566,21 +582,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
-    "id": "s183",
-    "date": "3/17",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-03-17",
-    "week": 3
-  },
-  {
     "id": "s15",
     "date": "3/17",
     "day": "화",
@@ -600,7 +601,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
-    "id": "s16",
+    "id": "s186",
     "date": "3/18",
     "day": "수",
     "periods": [
@@ -608,10 +609,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-03-18",
     "week": 3
   },
@@ -632,6 +633,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
+    "id": "s16",
+    "date": "3/18",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-18",
+    "week": 3
+  },
+  {
     "id": "s17",
     "date": "3/18",
     "day": "수",
@@ -648,52 +665,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
-    "id": "s186",
-    "date": "3/18",
-    "day": "수",
-    "periods": [
-      1,
-      2,
-      3
-    ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-03-18",
-    "week": 3
-  },
-  {
-    "id": "s19",
+    "id": "s188",
     "date": "3/19",
     "day": "목",
     "periods": [
-      3,
-      4,
+      1,
+      2,
       5,
       6,
       7,
       8
     ],
-    "subject": "소방시설점검행정",
-    "professor": "박명석",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-03-19",
-    "week": 3
-  },
-  {
-    "id": "s18",
-    "date": "3/19",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
+    "department": "전기",
     "sortDate": "2026-03-19",
     "week": 3
   },
@@ -713,21 +699,36 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
-    "id": "s188",
+    "id": "s18",
     "date": "3/19",
     "day": "목",
     "periods": [
       1,
-      2,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-03-19",
+    "week": 3
+  },
+  {
+    "id": "s19",
+    "date": "3/19",
+    "day": "목",
+    "periods": [
+      3,
+      4,
       5,
       6,
       7,
       8
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
-    "department": "전기",
+    "subject": "소방시설점검행정",
+    "professor": "박명석",
+    "classroom": "강의실-2",
+    "department": "소방",
     "sortDate": "2026-03-19",
     "week": 3
   },
@@ -770,40 +771,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 3
   },
   {
-    "id": "s21",
-    "date": "3/23",
-    "day": "월",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "소방시설공사",
-    "professor": "이준상",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-03-23",
-    "week": 4
-  },
-  {
-    "id": "s22",
-    "date": "3/23",
-    "day": "월",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-03-23",
-    "week": 4
-  },
-  {
     "id": "s191",
     "date": "3/23",
     "day": "월",
@@ -838,6 +805,40 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 4
   },
   {
+    "id": "s21",
+    "date": "3/23",
+    "day": "월",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "소방시설공사",
+    "professor": "이준상",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-23",
+    "week": 4
+  },
+  {
+    "id": "s22",
+    "date": "3/23",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-23",
+    "week": 4
+  },
+  {
     "id": "s194",
     "date": "3/24",
     "day": "화",
@@ -849,6 +850,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-03-24",
+    "week": 4
+  },
+  {
+    "id": "s193",
+    "date": "3/24",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-24",
     "week": 4
@@ -885,21 +901,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 4
   },
   {
-    "id": "s193",
-    "date": "3/24",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-03-24",
-    "week": 4
-  },
-  {
     "id": "s24",
     "date": "3/24",
     "day": "화",
@@ -919,7 +920,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 4
   },
   {
-    "id": "s25",
+    "id": "s903",
     "date": "3/25",
     "day": "수",
     "periods": [
@@ -927,15 +928,15 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-03-25",
     "week": 4
   },
   {
-    "id": "s197",
+    "id": "s904",
     "date": "3/25",
     "day": "수",
     "periods": [
@@ -951,7 +952,23 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 4
   },
   {
-    "id": "s26",
+    "id": "s901",
+    "date": "3/25",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-25",
+    "week": 4
+  },
+  {
+    "id": "s902",
     "date": "3/25",
     "day": "수",
     "periods": [
@@ -967,49 +984,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 4
   },
   {
-    "id": "s196",
-    "date": "3/25",
-    "day": "수",
+    "id": "s199",
+    "date": "3/26",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
-    ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-03-25",
-    "week": 4
-  },
-  {
-    "id": "s27",
-    "date": "3/25",
-    "day": "수",
-    "periods": [
+      5,
+      6,
       7,
       8
     ],
-    "subject": "학생 안전교육",
-    "professor": "행정처",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
+    "department": "전기",
+    "sortDate": "2026-03-26",
+    "week": 4
+  },
+  {
+    "id": "s200",
+    "date": "3/26",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-03-26",
+    "week": 4
+  },
+  {
+    "id": "s28",
+    "date": "3/26",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
     "classroom": "강의실-2",
     "department": "소방",
-    "sortDate": "2026-03-25",
-    "week": 4
-  },
-  {
-    "id": "s198",
-    "date": "3/25",
-    "day": "수",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "학생 안전교육",
-    "professor": "행정처",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-03-25",
+    "sortDate": "2026-03-26",
     "week": 4
   },
   {
@@ -1032,52 +1052,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 4
   },
   {
-    "id": "s28",
-    "date": "3/26",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-03-26",
-    "week": 4
-  },
-  {
-    "id": "s200",
-    "date": "3/26",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-03-26",
-    "week": 4
-  },
-  {
-    "id": "s199",
-    "date": "3/26",
-    "day": "목",
+    "id": "s201",
+    "date": "3/27",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-03-26",
+    "sortDate": "2026-03-27",
     "week": 4
   },
   {
@@ -1111,40 +1101,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-03-27",
     "week": 4
-  },
-  {
-    "id": "s201",
-    "date": "3/27",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-03-27",
-    "week": 4
-  },
-  {
-    "id": "s33",
-    "date": "3/30",
-    "day": "월",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-03-30",
-    "week": 5
   },
   {
     "id": "s202",
@@ -1200,6 +1156,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 5
   },
   {
+    "id": "s33",
+    "date": "3/30",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-03-30",
+    "week": 5
+  },
+  {
     "id": "s205",
     "date": "3/31",
     "day": "화",
@@ -1211,6 +1182,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-03-31",
+    "week": 5
+  },
+  {
+    "id": "s204",
+    "date": "3/31",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-03-31",
     "week": 5
@@ -1247,21 +1233,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 5
   },
   {
-    "id": "s204",
-    "date": "3/31",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-03-31",
-    "week": 5
-  },
-  {
     "id": "s35",
     "date": "3/31",
     "day": "화",
@@ -1281,37 +1252,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 5
   },
   {
-    "id": "s38",
-    "date": "4/1",
-    "day": "수",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "학생 4대 폭력 예방 교육",
-    "professor": "교학처",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-01",
-    "week": 5
-  },
-  {
-    "id": "s209",
-    "date": "4/1",
-    "day": "수",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "학생 4대 폭력 예방 교육",
-    "professor": "교학처",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-04-01",
-    "week": 5
-  },
-  {
-    "id": "s36",
+    "id": "s907",
     "date": "4/1",
     "day": "수",
     "periods": [
@@ -1319,15 +1260,15 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-04-01",
     "week": 5
   },
   {
-    "id": "s208",
+    "id": "s908",
     "date": "4/1",
     "day": "수",
     "periods": [
@@ -1343,7 +1284,23 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 5
   },
   {
-    "id": "s37",
+    "id": "s905",
+    "date": "4/1",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-01",
+    "week": 5
+  },
+  {
+    "id": "s906",
     "date": "4/1",
     "day": "수",
     "periods": [
@@ -1359,19 +1316,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 5
   },
   {
-    "id": "s207",
-    "date": "4/1",
-    "day": "수",
+    "id": "s210",
+    "date": "4/2",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
     "department": "전기",
-    "sortDate": "2026-04-01",
+    "sortDate": "2026-04-02",
+    "week": 5
+  },
+  {
+    "id": "s211",
+    "date": "4/2",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-04-02",
+    "week": 5
+  },
+  {
+    "id": "s39",
+    "date": "4/2",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-04-02",
     "week": 5
   },
   {
@@ -1394,52 +1384,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 5
   },
   {
-    "id": "s39",
-    "date": "4/2",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-02",
-    "week": 5
-  },
-  {
-    "id": "s211",
-    "date": "4/2",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-04-02",
-    "week": 5
-  },
-  {
-    "id": "s210",
-    "date": "4/2",
-    "day": "목",
+    "id": "s212",
+    "date": "4/3",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-04-02",
+    "sortDate": "2026-04-03",
     "week": 5
   },
   {
@@ -1473,59 +1433,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-04-03",
     "week": 5
-  },
-  {
-    "id": "s212",
-    "date": "4/3",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-04-03",
-    "week": 5
-  },
-  {
-    "id": "s43",
-    "date": "4/6",
-    "day": "월",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "전기산업안전",
-    "professor": "신건진",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-06",
-    "week": 6
-  },
-  {
-    "id": "s44",
-    "date": "4/6",
-    "day": "월",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-06",
-    "week": 6
   },
   {
     "id": "s213",
@@ -1562,6 +1469,40 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 6
   },
   {
+    "id": "s43",
+    "date": "4/6",
+    "day": "월",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "전기산업안전",
+    "professor": "신건진",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-06",
+    "week": 6
+  },
+  {
+    "id": "s44",
+    "date": "4/6",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-06",
+    "week": 6
+  },
+  {
     "id": "s216",
     "date": "4/7",
     "day": "화",
@@ -1573,6 +1514,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-04-07",
+    "week": 6
+  },
+  {
+    "id": "s215",
+    "date": "4/7",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-07",
     "week": 6
@@ -1609,21 +1565,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 6
   },
   {
-    "id": "s215",
-    "date": "4/7",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-04-07",
-    "week": 6
-  },
-  {
     "id": "s46",
     "date": "4/7",
     "day": "화",
@@ -1643,7 +1584,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 6
   },
   {
-    "id": "s47",
+    "id": "s218",
     "date": "4/8",
     "day": "수",
     "periods": [
@@ -1651,10 +1592,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-04-08",
     "week": 6
   },
@@ -1675,6 +1616,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 6
   },
   {
+    "id": "s47",
+    "date": "4/8",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-08",
+    "week": 6
+  },
+  {
     "id": "s48",
     "date": "4/8",
     "day": "수",
@@ -1691,19 +1648,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 6
   },
   {
-    "id": "s218",
-    "date": "4/8",
-    "day": "수",
+    "id": "s220",
+    "date": "4/9",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
     "department": "전기",
-    "sortDate": "2026-04-08",
+    "sortDate": "2026-04-09",
+    "week": 6
+  },
+  {
+    "id": "s221",
+    "date": "4/9",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-04-09",
+    "week": 6
+  },
+  {
+    "id": "s49",
+    "date": "4/9",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-04-09",
     "week": 6
   },
   {
@@ -1726,52 +1716,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 6
   },
   {
-    "id": "s49",
-    "date": "4/9",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-09",
-    "week": 6
-  },
-  {
-    "id": "s221",
-    "date": "4/9",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-04-09",
-    "week": 6
-  },
-  {
-    "id": "s220",
-    "date": "4/9",
-    "day": "목",
+    "id": "s222",
+    "date": "4/10",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-04-09",
+    "sortDate": "2026-04-10",
     "week": 6
   },
   {
@@ -1805,59 +1765,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-04-10",
     "week": 6
-  },
-  {
-    "id": "s222",
-    "date": "4/10",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-04-10",
-    "week": 6
-  },
-  {
-    "id": "s53",
-    "date": "4/13",
-    "day": "월",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "소방시설공사",
-    "professor": "이준상",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-13",
-    "week": 7
-  },
-  {
-    "id": "s54",
-    "date": "4/13",
-    "day": "월",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-13",
-    "week": 7
   },
   {
     "id": "s223",
@@ -1894,6 +1801,40 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 7
   },
   {
+    "id": "s53",
+    "date": "4/13",
+    "day": "월",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "소방시설공사",
+    "professor": "이준상",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-13",
+    "week": 7
+  },
+  {
+    "id": "s54",
+    "date": "4/13",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-13",
+    "week": 7
+  },
+  {
     "id": "s226",
     "date": "4/14",
     "day": "화",
@@ -1905,6 +1846,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-04-14",
+    "week": 7
+  },
+  {
+    "id": "s225",
+    "date": "4/14",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-14",
     "week": 7
@@ -1941,21 +1897,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 7
   },
   {
-    "id": "s225",
-    "date": "4/14",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-04-14",
-    "week": 7
-  },
-  {
     "id": "s56",
     "date": "4/14",
     "day": "화",
@@ -1975,7 +1916,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 7
   },
   {
-    "id": "s57",
+    "id": "s228",
     "date": "4/15",
     "day": "수",
     "periods": [
@@ -1983,10 +1924,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-04-15",
     "week": 7
   },
@@ -2007,6 +1948,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 7
   },
   {
+    "id": "s57",
+    "date": "4/15",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-15",
+    "week": 7
+  },
+  {
     "id": "s58",
     "date": "4/15",
     "day": "수",
@@ -2023,19 +1980,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 7
   },
   {
-    "id": "s228",
-    "date": "4/15",
-    "day": "수",
+    "id": "s230",
+    "date": "4/16",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
     "department": "전기",
-    "sortDate": "2026-04-15",
+    "sortDate": "2026-04-16",
+    "week": 7
+  },
+  {
+    "id": "s231",
+    "date": "4/16",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-04-16",
+    "week": 7
+  },
+  {
+    "id": "s59",
+    "date": "4/16",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-04-16",
     "week": 7
   },
   {
@@ -2058,52 +2048,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 7
   },
   {
-    "id": "s59",
-    "date": "4/16",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-16",
-    "week": 7
-  },
-  {
-    "id": "s231",
-    "date": "4/16",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-04-16",
-    "week": 7
-  },
-  {
-    "id": "s230",
-    "date": "4/16",
-    "day": "목",
+    "id": "s232",
+    "date": "4/17",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-04-16",
+    "sortDate": "2026-04-17",
     "week": 7
   },
   {
@@ -2137,59 +2097,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-04-17",
     "week": 7
-  },
-  {
-    "id": "s232",
-    "date": "4/17",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-04-17",
-    "week": 7
-  },
-  {
-    "id": "s63",
-    "date": "4/20",
-    "day": "월",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "전기산업안전",
-    "professor": "신건진",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-20",
-    "week": 8
-  },
-  {
-    "id": "s64",
-    "date": "4/20",
-    "day": "월",
-    "periods": [
-      7,
-      8
-    ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-20",
-    "week": 8
   },
   {
     "id": "s233",
@@ -2226,6 +2133,40 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
+    "id": "s63",
+    "date": "4/20",
+    "day": "월",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "전기산업안전",
+    "professor": "신건진",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-20",
+    "week": 8
+  },
+  {
+    "id": "s64",
+    "date": "4/20",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-20",
+    "week": 8
+  },
+  {
     "id": "s236",
     "date": "4/21",
     "day": "화",
@@ -2237,6 +2178,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-04-21",
+    "week": 8
+  },
+  {
+    "id": "s235",
+    "date": "4/21",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-21",
     "week": 8
@@ -2273,21 +2229,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
-    "id": "s235",
-    "date": "4/21",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-04-21",
-    "week": 8
-  },
-  {
     "id": "s66",
     "date": "4/21",
     "day": "화",
@@ -2307,7 +2248,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
-    "id": "s67",
+    "id": "s238",
     "date": "4/22",
     "day": "수",
     "periods": [
@@ -2315,10 +2256,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-04-22",
     "week": 8
   },
@@ -2339,6 +2280,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
+    "id": "s67",
+    "date": "4/22",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-22",
+    "week": 8
+  },
+  {
     "id": "s68",
     "date": "4/22",
     "day": "수",
@@ -2355,19 +2312,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
-    "id": "s238",
-    "date": "4/22",
-    "day": "수",
+    "id": "s240",
+    "date": "4/23",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
     "department": "전기",
-    "sortDate": "2026-04-22",
+    "sortDate": "2026-04-23",
+    "week": 8
+  },
+  {
+    "id": "s241",
+    "date": "4/23",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-04-23",
+    "week": 8
+  },
+  {
+    "id": "s69",
+    "date": "4/23",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-04-23",
     "week": 8
   },
   {
@@ -2390,52 +2380,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
-    "id": "s69",
-    "date": "4/23",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-23",
-    "week": 8
-  },
-  {
-    "id": "s241",
-    "date": "4/23",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-04-23",
-    "week": 8
-  },
-  {
-    "id": "s240",
-    "date": "4/23",
-    "day": "목",
+    "id": "s242",
+    "date": "4/24",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-04-23",
+    "sortDate": "2026-04-24",
     "week": 8
   },
   {
@@ -2471,39 +2431,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 8
   },
   {
-    "id": "s242",
-    "date": "4/24",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-04-24",
-    "week": 8
-  },
-  {
-    "id": "s74",
-    "date": "4/27",
-    "day": "월",
-    "periods": [
-      4
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-27",
-    "week": 9
-  },
-  {
     "id": "s243",
     "date": "4/27",
     "day": "월",
@@ -2515,39 +2442,6 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "권오연",
     "classroom": "강의실-1",
     "department": "전기",
-    "sortDate": "2026-04-27",
-    "week": 9
-  },
-  {
-    "id": "s73",
-    "date": "4/27",
-    "day": "월",
-    "periods": [
-      1,
-      2,
-      3,
-      5,
-      6,
-      7
-    ],
-    "subject": "전기산업안전",
-    "professor": "신건진",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-04-27",
-    "week": 9
-  },
-  {
-    "id": "s75",
-    "date": "4/27",
-    "day": "월",
-    "periods": [
-      8
-    ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
     "sortDate": "2026-04-27",
     "week": 9
   },
@@ -2584,6 +2478,53 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 9
   },
   {
+    "id": "s73",
+    "date": "4/27",
+    "day": "월",
+    "periods": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "subject": "전기산업안전",
+    "professor": "신건진",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-27",
+    "week": 9
+  },
+  {
+    "id": "s74",
+    "date": "4/27",
+    "day": "월",
+    "periods": [
+      4
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-04-27",
+    "week": 9
+  },
+  {
+    "id": "s75",
+    "date": "4/27",
+    "day": "월",
+    "periods": [
+      8
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-27",
+    "week": 9
+  },
+  {
     "id": "s247",
     "date": "4/28",
     "day": "화",
@@ -2595,6 +2536,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기설비",
     "professor": "박명석",
     "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-04-28",
+    "week": 9
+  },
+  {
+    "id": "s246",
+    "date": "4/28",
+    "day": "화",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
     "department": "전기",
     "sortDate": "2026-04-28",
     "week": 9
@@ -2631,21 +2587,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 9
   },
   {
-    "id": "s246",
-    "date": "4/28",
-    "day": "화",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-04-28",
-    "week": 9
-  },
-  {
     "id": "s77",
     "date": "4/28",
     "day": "화",
@@ -2665,7 +2606,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 9
   },
   {
-    "id": "s78",
+    "id": "s249",
     "date": "4/29",
     "day": "수",
     "periods": [
@@ -2673,10 +2614,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-04-29",
     "week": 9
   },
@@ -2697,6 +2638,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 9
   },
   {
+    "id": "s78",
+    "date": "4/29",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-04-29",
+    "week": 9
+  },
+  {
     "id": "s79",
     "date": "4/29",
     "day": "수",
@@ -2710,71 +2667,6 @@ export const scheduleData: ScheduleEntry[] = [
     "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-04-29",
-    "week": 9
-  },
-  {
-    "id": "s249",
-    "date": "4/29",
-    "day": "수",
-    "periods": [
-      1,
-      2,
-      3
-    ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-04-29",
-    "week": 9
-  },
-  {
-    "id": "s81",
-    "date": "4/30",
-    "day": "목",
-    "periods": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
-    ],
-    "subject": "소방시설점검행정",
-    "professor": "박명석",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-30",
-    "week": 9
-  },
-  {
-    "id": "s80",
-    "date": "4/30",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-04-30",
-    "week": 9
-  },
-  {
-    "id": "s252",
-    "date": "4/30",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-04-30",
     "week": 9
   },
   {
@@ -2797,19 +2689,53 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 9
   },
   {
-    "id": "s83",
-    "date": "5/4",
-    "day": "월",
+    "id": "s252",
+    "date": "4/30",
+    "day": "목",
     "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-04-30",
+    "week": 9
+  },
+  {
+    "id": "s80",
+    "date": "4/30",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-04-30",
+    "week": 9
+  },
+  {
+    "id": "s81",
+    "date": "4/30",
+    "day": "목",
+    "periods": [
+      3,
+      4,
+      5,
+      6,
       7,
       8
     ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
+    "subject": "소방시설점검행정",
+    "professor": "박명석",
+    "classroom": "강의실-2",
     "department": "소방",
-    "sortDate": "2026-05-04",
-    "week": 10
+    "sortDate": "2026-04-30",
+    "week": 9
   },
   {
     "id": "s253",
@@ -2846,7 +2772,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 10
   },
   {
-    "id": "s82",
+    "id": "s909",
     "date": "5/4",
     "day": "월",
     "periods": [
@@ -2865,7 +2791,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 10
   },
   {
-    "id": "s84",
+    "id": "s910",
+    "date": "5/4",
+    "day": "월",
+    "periods": [
+      7,
+      8
+    ],
+    "subject": "소방설비",
+    "professor": "박민우",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-04",
+    "week": 10
+  },
+  {
+    "id": "s255",
     "date": "5/6",
     "day": "수",
     "periods": [
@@ -2873,10 +2814,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-05-06",
     "week": 10
   },
@@ -2897,7 +2838,36 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 10
   },
   {
-    "id": "s85",
+    "id": "s911",
+    "date": "5/6",
+    "day": "수",
+    "periods": [
+      1
+    ],
+    "subject": "소방설비",
+    "professor": "박민우",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-06",
+    "week": 10
+  },
+  {
+    "id": "s912",
+    "date": "5/6",
+    "day": "수",
+    "periods": [
+      2,
+      3
+    ],
+    "subject": "소방이론",
+    "professor": "박민우",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-06",
+    "week": 10
+  },
+  {
+    "id": "s913",
     "date": "5/6",
     "day": "수",
     "periods": [
@@ -2910,98 +2880,6 @@ export const scheduleData: ScheduleEntry[] = [
     "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-06",
-    "week": 10
-  },
-  {
-    "id": "s255",
-    "date": "5/6",
-    "day": "수",
-    "periods": [
-      1,
-      2,
-      3
-    ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-05-06",
-    "week": 10
-  },
-  {
-    "id": "s86",
-    "date": "5/7",
-    "day": "목",
-    "periods": [
-      1
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-05-07",
-    "week": 10
-  },
-  {
-    "id": "s258",
-    "date": "5/7",
-    "day": "목",
-    "periods": [
-      2
-    ],
-    "subject": "건강과능력개발",
-    "professor": "박수명",
-    "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-05-07",
-    "week": 10
-  },
-  {
-    "id": "s88",
-    "date": "5/7",
-    "day": "목",
-    "periods": [
-      4,
-      5,
-      6,
-      7,
-      8
-    ],
-    "subject": "소방기본설계",
-    "professor": "유상태",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-05-07",
-    "week": 10
-  },
-  {
-    "id": "s87",
-    "date": "5/7",
-    "day": "목",
-    "periods": [
-      2,
-      3
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-05-07",
-    "week": 10
-  },
-  {
-    "id": "s259",
-    "date": "5/7",
-    "day": "목",
-    "periods": [
-      4,
-      5
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-05-07",
     "week": 10
   },
   {
@@ -3023,35 +2901,66 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 10
   },
   {
-    "id": "s89",
-    "date": "5/8",
-    "day": "금",
+    "id": "s258",
+    "date": "5/7",
+    "day": "목",
+    "periods": [
+      2
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-1",
+    "department": "전기",
+    "sortDate": "2026-05-07",
+    "week": 10
+  },
+  {
+    "id": "s259",
+    "date": "5/7",
+    "day": "목",
+    "periods": [
+      4,
+      5
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-05-07",
+    "week": 10
+  },
+  {
+    "id": "s914",
+    "date": "5/7",
+    "day": "목",
     "periods": [
       1,
       2,
       3
     ],
-    "subject": "소방설비",
-    "professor": "박민우",
-    "classroom": "강의실-2",
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
     "department": "소방",
-    "sortDate": "2026-05-08",
+    "sortDate": "2026-05-07",
     "week": 10
   },
   {
-    "id": "s90",
-    "date": "5/8",
-    "day": "금",
+    "id": "s915",
+    "date": "5/7",
+    "day": "목",
     "periods": [
       4,
       5,
-      6
+      6,
+      7,
+      8
     ],
-    "subject": "소방이론",
-    "professor": "박민우",
-    "classroom": "강의실-2",
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
     "department": "소방",
-    "sortDate": "2026-05-08",
+    "sortDate": "2026-05-07",
     "week": 10
   },
   {
@@ -3074,19 +2983,49 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 10
   },
   {
-    "id": "s92",
-    "date": "5/11",
-    "day": "월",
+    "id": "s916",
+    "date": "5/8",
+    "day": "금",
     "periods": [
-      5,
+      1,
+      2
+    ],
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-08",
+    "week": 10
+  },
+  {
+    "id": "s917",
+    "date": "5/8",
+    "day": "금",
+    "periods": [
+      3,
+      4,
+      5
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-08",
+    "week": 10
+  },
+  {
+    "id": "s918",
+    "date": "5/8",
+    "day": "금",
+    "periods": [
       6
     ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
+    "subject": "전기소방설비유지보수",
+    "professor": "이강희",
+    "classroom": "전력전자실",
     "department": "소방",
-    "sortDate": "2026-05-11",
-    "week": 11
+    "sortDate": "2026-05-08",
+    "week": 10
   },
   {
     "id": "s261",
@@ -3137,6 +3076,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "소방시설공사",
     "professor": "이준상",
     "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-11",
+    "week": 11
+  },
+  {
+    "id": "s92",
+    "date": "5/11",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-05-11",
     "week": 11
@@ -3210,7 +3164,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 11
   },
   {
-    "id": "s94",
+    "id": "s265",
     "date": "5/13",
     "day": "수",
     "periods": [
@@ -3218,10 +3172,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-05-13",
     "week": 11
   },
@@ -3242,6 +3196,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 11
   },
   {
+    "id": "s94",
+    "date": "5/13",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-13",
+    "week": 11
+  },
+  {
     "id": "s95",
     "date": "5/13",
     "day": "수",
@@ -3258,19 +3228,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 11
   },
   {
-    "id": "s265",
-    "date": "5/13",
-    "day": "수",
+    "id": "s267",
+    "date": "5/14",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "공유압제어기초",
+    "professor": "최무호",
+    "classroom": "공유압제어실",
     "department": "전기",
-    "sortDate": "2026-05-13",
+    "sortDate": "2026-05-14",
+    "week": 11
+  },
+  {
+    "id": "s268",
+    "date": "5/14",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-05-14",
+    "week": 11
+  },
+  {
+    "id": "s96",
+    "date": "5/14",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-14",
     "week": 11
   },
   {
@@ -3293,52 +3296,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 11
   },
   {
-    "id": "s96",
-    "date": "5/14",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-05-14",
-    "week": 11
-  },
-  {
-    "id": "s268",
-    "date": "5/14",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-05-14",
-    "week": 11
-  },
-  {
-    "id": "s267",
-    "date": "5/14",
-    "day": "목",
+    "id": "s269",
+    "date": "5/15",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "공유압제어기초",
-    "professor": "최무호",
-    "classroom": "공유압제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-05-14",
+    "sortDate": "2026-05-15",
     "week": 11
   },
   {
@@ -3374,40 +3347,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 11
   },
   {
-    "id": "s269",
-    "date": "5/15",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-05-15",
-    "week": 11
-  },
-  {
-    "id": "s103",
-    "date": "5/18",
-    "day": "월",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-05-18",
-    "week": 12
-  },
-  {
     "id": "s270",
     "date": "5/18",
     "day": "월",
@@ -3418,20 +3357,6 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "직업과사회",
     "professor": "권오연",
     "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-05-18",
-    "week": 12
-  },
-  {
-    "id": "s272",
-    "date": "5/18",
-    "day": "월",
-    "periods": [
-      8
-    ],
-    "subject": "전기설비실습",
-    "professor": "박명석",
-    "classroom": "내선공사실",
     "department": "전기",
     "sortDate": "2026-05-18",
     "week": 12
@@ -3451,6 +3376,34 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "신건진",
     "classroom": "시퀀스제어실",
     "department": "전기",
+    "sortDate": "2026-05-18",
+    "week": 12
+  },
+  {
+    "id": "s272",
+    "date": "5/18",
+    "day": "월",
+    "periods": [
+      8
+    ],
+    "subject": "전기설비실습",
+    "professor": "박명석",
+    "classroom": "내선공사실",
+    "department": "전기",
+    "sortDate": "2026-05-18",
+    "week": 12
+  },
+  {
+    "id": "s100",
+    "date": "5/18",
+    "day": "월",
+    "periods": [
+      1
+    ],
+    "subject": "소방시설점검행정",
+    "professor": "이준상",
+    "classroom": "전력전자실",
+    "department": "소방",
     "sortDate": "2026-05-18",
     "week": 12
   },
@@ -3485,6 +3438,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 12
   },
   {
+    "id": "s103",
+    "date": "5/18",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-18",
+    "week": 12
+  },
+  {
     "id": "s102a",
     "date": "5/18",
     "day": "월",
@@ -3494,20 +3462,6 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "소방이론",
     "professor": "박민우",
     "classroom": "스마트그리드실",
-    "department": "소방",
-    "sortDate": "2026-05-18",
-    "week": 12
-  },
-  {
-    "id": "s100",
-    "date": "5/18",
-    "day": "월",
-    "periods": [
-      1
-    ],
-    "subject": "소방시설점검행정",
-    "professor": "이준상",
-    "classroom": "전력전자실",
     "department": "소방",
     "sortDate": "2026-05-18",
     "week": 12
@@ -3568,7 +3522,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 12
   },
   {
-    "id": "s105",
+    "id": "s275",
     "date": "5/20",
     "day": "수",
     "periods": [
@@ -3576,10 +3530,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-05-20",
     "week": 12
   },
@@ -3600,6 +3554,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 12
   },
   {
+    "id": "s105",
+    "date": "5/20",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-20",
+    "week": 12
+  },
+  {
     "id": "s106",
     "date": "5/20",
     "day": "수",
@@ -3616,19 +3586,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 12
   },
   {
-    "id": "s275",
-    "date": "5/20",
-    "day": "수",
+    "id": "s277",
+    "date": "5/21",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "PLC제어기초",
+    "professor": "최무호",
+    "classroom": "PLC제어실",
     "department": "전기",
-    "sortDate": "2026-05-20",
+    "sortDate": "2026-05-21",
+    "week": 12
+  },
+  {
+    "id": "s278",
+    "date": "5/21",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-05-21",
+    "week": 12
+  },
+  {
+    "id": "s107",
+    "date": "5/21",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-21",
     "week": 12
   },
   {
@@ -3651,52 +3654,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 12
   },
   {
-    "id": "s107",
-    "date": "5/21",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-05-21",
-    "week": 12
-  },
-  {
-    "id": "s278",
-    "date": "5/21",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "AI와윤리",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-05-21",
-    "week": 12
-  },
-  {
-    "id": "s277",
-    "date": "5/21",
-    "day": "목",
+    "id": "s279",
+    "date": "5/22",
+    "day": "금",
     "periods": [
       1,
       2,
+      3,
+      4,
       5,
-      6,
-      7,
-      8
+      6
     ],
-    "subject": "PLC제어기초",
-    "professor": "최무호",
-    "classroom": "PLC제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-05-21",
+    "sortDate": "2026-05-22",
     "week": 12
   },
   {
@@ -3741,25 +3714,6 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "이강희",
     "classroom": "전력전자실",
     "department": "소방",
-    "sortDate": "2026-05-22",
-    "week": 12
-  },
-  {
-    "id": "s279",
-    "date": "5/22",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
     "sortDate": "2026-05-22",
     "week": 12
   },
@@ -3832,7 +3786,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 13
   },
   {
-    "id": "s112",
+    "id": "s282",
     "date": "5/27",
     "day": "수",
     "periods": [
@@ -3840,10 +3794,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-05-27",
     "week": 13
   },
@@ -3877,6 +3831,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 13
   },
   {
+    "id": "s112",
+    "date": "5/27",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-05-27",
+    "week": 13
+  },
+  {
     "id": "s113",
     "date": "5/27",
     "day": "수",
@@ -3893,19 +3863,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 13
   },
   {
-    "id": "s282",
-    "date": "5/27",
-    "day": "수",
+    "id": "s284",
+    "date": "5/28",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "PLC제어기초",
+    "professor": "최무호",
+    "classroom": "PLC제어실",
     "department": "전기",
-    "sortDate": "2026-05-27",
+    "sortDate": "2026-05-28",
+    "week": 13
+  },
+  {
+    "id": "s285",
+    "date": "5/28",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "PLC제어기초",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-05-28",
+    "week": 13
+  },
+  {
+    "id": "s114",
+    "date": "5/28",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "소방시설설계",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-05-28",
     "week": 13
   },
   {
@@ -3941,52 +3944,35 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 13
   },
   {
-    "id": "s114",
-    "date": "5/28",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "소방시설설계",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-05-28",
-    "week": 13
-  },
-  {
-    "id": "s285",
-    "date": "5/28",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "PLC제어기초",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-05-28",
-    "week": 13
-  },
-  {
-    "id": "s284",
-    "date": "5/28",
-    "day": "목",
+    "id": "s286",
+    "date": "5/29",
+    "day": "금",
     "periods": [
       1,
       2,
-      5,
-      6,
-      7,
-      8
+      3,
+      4
     ],
-    "subject": "PLC제어기초",
-    "professor": "최무호",
-    "classroom": "PLC제어실",
+    "subject": "수변전실습",
+    "professor": "변상호",
+    "classroom": "스마트그리드실",
     "department": "전기",
-    "sortDate": "2026-05-28",
+    "sortDate": "2026-05-29",
+    "week": 13
+  },
+  {
+    "id": "s286a",
+    "date": "5/29",
+    "day": "금",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "시퀀스제어실",
+    "department": "전기",
+    "sortDate": "2026-05-29",
     "week": 13
   },
   {
@@ -4020,53 +4006,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-05-29",
     "week": 13
-  },
-  {
-    "id": "s286",
-    "date": "5/29",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "subject": "수변전실습",
-    "professor": "변상호",
-    "classroom": "스마트그리드실",
-    "department": "전기",
-    "sortDate": "2026-05-29",
-    "week": 13
-  },
-  {
-    "id": "s286a",
-    "date": "5/29",
-    "day": "금",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "시퀀스제어실",
-    "department": "전기",
-    "sortDate": "2026-05-29",
-    "week": 13
-  },
-  {
-    "id": "s119",
-    "date": "6/1",
-    "day": "월",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-01",
-    "week": 14
   },
   {
     "id": "s287",
@@ -4135,6 +4074,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 14
   },
   {
+    "id": "s119",
+    "date": "6/1",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-06-01",
+    "week": 14
+  },
+  {
     "id": "s290",
     "date": "6/2",
     "day": "화",
@@ -4190,55 +4144,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 14
   },
   {
-    "id": "s122",
-    "date": "6/4",
-    "day": "목",
-    "periods": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
-    ],
-    "subject": "소방기본설계",
-    "professor": "유상태",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-06-04",
-    "week": 14
-  },
-  {
-    "id": "s121",
-    "date": "6/4",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "소방시설설계",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-04",
-    "week": 14
-  },
-  {
-    "id": "s293",
-    "date": "6/4",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "PLC제어기초",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-06-04",
-    "week": 14
-  },
-  {
     "id": "s292",
     "date": "6/4",
     "day": "목",
@@ -4258,35 +4163,52 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 14
   },
   {
-    "id": "s123",
-    "date": "6/5",
-    "day": "금",
+    "id": "s293",
+    "date": "6/4",
+    "day": "목",
     "periods": [
-      1,
-      2,
-      3
+      3,
+      4
     ],
-    "subject": "소방설비",
-    "professor": "박민우",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-05",
+    "subject": "PLC제어기초",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-06-04",
     "week": 14
   },
   {
-    "id": "s124",
-    "date": "6/5",
-    "day": "금",
+    "id": "s121",
+    "date": "6/4",
+    "day": "목",
     "periods": [
-      4,
-      5,
-      6
+      1,
+      2
     ],
-    "subject": "소방이론",
-    "professor": "박민우",
+    "subject": "소방시설설계",
+    "professor": "이수민",
     "classroom": "강의실-2",
     "department": "소방",
-    "sortDate": "2026-06-05",
+    "sortDate": "2026-06-04",
+    "week": 14
+  },
+  {
+    "id": "s122",
+    "date": "6/4",
+    "day": "목",
+    "periods": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "subject": "소방기본설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-04",
     "week": 14
   },
   {
@@ -4322,19 +4244,36 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 14
   },
   {
-    "id": "s126",
-    "date": "6/8",
-    "day": "월",
+    "id": "s123",
+    "date": "6/5",
+    "day": "금",
     "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "소방설비",
+    "professor": "박민우",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-06-05",
+    "week": 14
+  },
+  {
+    "id": "s124",
+    "date": "6/5",
+    "day": "금",
+    "periods": [
+      4,
       5,
       6
     ],
-    "subject": "직업과사회",
-    "professor": "권오연",
+    "subject": "소방이론",
+    "professor": "박민우",
     "classroom": "강의실-2",
     "department": "소방",
-    "sortDate": "2026-06-08",
-    "week": 15
+    "sortDate": "2026-06-05",
+    "week": 14
   },
   {
     "id": "s296",
@@ -4347,20 +4286,6 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "직업과사회",
     "professor": "권오연",
     "classroom": "강의실-1",
-    "department": "전기",
-    "sortDate": "2026-06-08",
-    "week": 15
-  },
-  {
-    "id": "s299",
-    "date": "6/8",
-    "day": "월",
-    "periods": [
-      8
-    ],
-    "subject": "전기산업안전",
-    "professor": "신건진",
-    "classroom": "시퀀스제어실",
     "department": "전기",
     "sortDate": "2026-06-08",
     "week": 15
@@ -4397,6 +4322,20 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 15
   },
   {
+    "id": "s299",
+    "date": "6/8",
+    "day": "월",
+    "periods": [
+      8
+    ],
+    "subject": "전기산업안전",
+    "professor": "신건진",
+    "classroom": "시퀀스제어실",
+    "department": "전기",
+    "sortDate": "2026-06-08",
+    "week": 15
+  },
+  {
     "id": "s125",
     "date": "6/8",
     "day": "월",
@@ -4411,6 +4350,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "소방시설공사",
     "professor": "이준상",
     "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-08",
+    "week": 15
+  },
+  {
+    "id": "s126",
+    "date": "6/8",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-08",
     "week": 15
@@ -4471,7 +4425,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 15
   },
   {
-    "id": "s128",
+    "id": "s301",
     "date": "6/10",
     "day": "수",
     "periods": [
@@ -4479,10 +4433,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-06-10",
     "week": 15
   },
@@ -4503,6 +4457,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 15
   },
   {
+    "id": "s128",
+    "date": "6/10",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-10",
+    "week": 15
+  },
+  {
     "id": "s129",
     "date": "6/10",
     "day": "수",
@@ -4519,19 +4489,34 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 15
   },
   {
-    "id": "s301",
-    "date": "6/10",
-    "day": "수",
+    "id": "s303",
+    "date": "6/11",
+    "day": "목",
     "periods": [
       1,
       2,
-      3
+      5
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "PLC제어기초",
+    "professor": "최무호",
+    "classroom": "PLC제어실",
     "department": "전기",
-    "sortDate": "2026-06-10",
+    "sortDate": "2026-06-11",
+    "week": 15
+  },
+  {
+    "id": "s304",
+    "date": "6/11",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "PLC제어기초",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-06-11",
     "week": 15
   },
   {
@@ -4547,6 +4532,21 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "박명석",
     "classroom": "PLC제어실",
     "department": "전기",
+    "sortDate": "2026-06-11",
+    "week": 15
+  },
+  {
+    "id": "s130",
+    "date": "6/11",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "소방시설설계",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
     "sortDate": "2026-06-11",
     "week": 15
   },
@@ -4583,49 +4583,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 15
   },
   {
-    "id": "s130",
-    "date": "6/11",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "소방시설설계",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-11",
-    "week": 15
-  },
-  {
-    "id": "s304",
-    "date": "6/11",
-    "day": "목",
-    "periods": [
-      3,
-      4
-    ],
-    "subject": "PLC제어기초",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
-    "sortDate": "2026-06-11",
-    "week": 15
-  },
-  {
-    "id": "s303",
-    "date": "6/11",
-    "day": "목",
+    "id": "s306",
+    "date": "6/12",
+    "day": "금",
     "periods": [
       1,
       2,
-      5
+      3,
+      4,
+      5,
+      6
     ],
-    "subject": "PLC제어기초",
-    "professor": "최무호",
-    "classroom": "PLC제어실",
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "시퀀스제어실",
     "department": "전기",
-    "sortDate": "2026-06-11",
+    "sortDate": "2026-06-12",
     "week": 15
   },
   {
@@ -4659,40 +4632,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-06-12",
     "week": 15
-  },
-  {
-    "id": "s306",
-    "date": "6/12",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "시퀀스제어실",
-    "department": "전기",
-    "sortDate": "2026-06-12",
-    "week": 15
-  },
-  {
-    "id": "s136",
-    "date": "6/15",
-    "day": "월",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-15",
-    "week": 16
   },
   {
     "id": "s307",
@@ -4748,6 +4687,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 16
   },
   {
+    "id": "s136",
+    "date": "6/15",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-06-15",
+    "week": 16
+  },
+  {
     "id": "s309",
     "date": "6/16",
     "day": "화",
@@ -4790,7 +4744,7 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 16
   },
   {
-    "id": "s138",
+    "id": "s310",
     "date": "6/17",
     "day": "수",
     "periods": [
@@ -4798,10 +4752,10 @@ export const scheduleData: ScheduleEntry[] = [
       2,
       3
     ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-06-17",
     "week": 16
   },
@@ -4822,6 +4776,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 16
   },
   {
+    "id": "s138",
+    "date": "6/17",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3
+    ],
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-17",
+    "week": 16
+  },
+  {
     "id": "s139",
     "date": "6/17",
     "day": "수",
@@ -4838,19 +4808,33 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 16
   },
   {
-    "id": "s310",
-    "date": "6/17",
-    "day": "수",
+    "id": "s312",
+    "date": "6/18",
+    "day": "목",
     "periods": [
       1,
-      2,
-      3
+      2
     ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
+    "subject": "시퀀스제어실습",
+    "professor": "이강희",
+    "classroom": "시퀀스제어실",
     "department": "전기",
-    "sortDate": "2026-06-17",
+    "sortDate": "2026-06-18",
+    "week": 16
+  },
+  {
+    "id": "s313",
+    "date": "6/18",
+    "day": "목",
+    "periods": [
+      3,
+      4
+    ],
+    "subject": "PLC제어기초",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
+    "sortDate": "2026-06-18",
     "week": 16
   },
   {
@@ -4867,6 +4851,21 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "박명석",
     "classroom": "PLC제어실",
     "department": "전기",
+    "sortDate": "2026-06-18",
+    "week": 16
+  },
+  {
+    "id": "s140",
+    "date": "6/18",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "소방시설설계",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
     "sortDate": "2026-06-18",
     "week": 16
   },
@@ -4890,48 +4889,22 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 16
   },
   {
-    "id": "s312",
-    "date": "6/18",
-    "day": "목",
+    "id": "s315",
+    "date": "6/19",
+    "day": "금",
     "periods": [
       1,
-      2
-    ],
-    "subject": "시퀀스제어실습",
-    "professor": "이강희",
-    "classroom": "시퀀스제어실",
-    "department": "전기",
-    "sortDate": "2026-06-18",
-    "week": 16
-  },
-  {
-    "id": "s140",
-    "date": "6/18",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "소방시설설계",
-    "professor": "이수민",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-18",
-    "week": 16
-  },
-  {
-    "id": "s313",
-    "date": "6/18",
-    "day": "목",
-    "periods": [
+      2,
       3,
-      4
+      4,
+      5,
+      6
     ],
     "subject": "PLC제어기초",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
+    "professor": "최무호",
+    "classroom": "PLC제어실",
     "department": "전기",
-    "sortDate": "2026-06-18",
+    "sortDate": "2026-06-19",
     "week": 16
   },
   {
@@ -4965,40 +4938,6 @@ export const scheduleData: ScheduleEntry[] = [
     "department": "소방",
     "sortDate": "2026-06-19",
     "week": 16
-  },
-  {
-    "id": "s315",
-    "date": "6/19",
-    "day": "금",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "PLC제어기초",
-    "professor": "최무호",
-    "classroom": "PLC제어실",
-    "department": "전기",
-    "sortDate": "2026-06-19",
-    "week": 16
-  },
-  {
-    "id": "s145",
-    "date": "6/22",
-    "day": "월",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-22",
-    "week": 17
   },
   {
     "id": "s316",
@@ -5049,6 +4988,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기소방설비설계",
     "professor": "이강희",
     "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-22",
+    "week": 17
+  },
+  {
+    "id": "s145",
+    "date": "6/22",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-22",
     "week": 17
@@ -5109,20 +5063,16 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 17
   },
   {
-    "id": "s148",
+    "id": "s319",
     "date": "6/24",
     "day": "수",
     "periods": [
-      1,
-      3,
-      4,
-      5,
-      6
+      1
     ],
-    "subject": "소방시설설계",
-    "professor": "유상태",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "전기기기",
+    "professor": "이대우",
+    "classroom": "강의실-1",
+    "department": "전기",
     "sortDate": "2026-06-24",
     "week": 17
   },
@@ -5145,6 +5095,24 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 17
   },
   {
+    "id": "s148",
+    "date": "6/24",
+    "day": "수",
+    "periods": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "소방시설설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-24",
+    "week": 17
+  },
+  {
     "id": "s149",
     "date": "6/24",
     "day": "수",
@@ -5155,20 +5123,6 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "이대우",
     "classroom": "강의실-2",
     "department": "소방",
-    "sortDate": "2026-06-24",
-    "week": 17
-  },
-  {
-    "id": "s319",
-    "date": "6/24",
-    "day": "수",
-    "periods": [
-      1
-    ],
-    "subject": "전기기기",
-    "professor": "이대우",
-    "classroom": "강의실-1",
-    "department": "전기",
     "sortDate": "2026-06-24",
     "week": 17
   },
@@ -5192,21 +5146,17 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 17
   },
   {
-    "id": "s151",
+    "id": "s322",
     "date": "6/25",
     "day": "목",
     "periods": [
       3,
-      4,
-      5,
-      6,
-      7,
-      8
+      4
     ],
-    "subject": "소방시설설계",
-    "professor": "유상태",
-    "classroom": "전력전자실",
-    "department": "소방",
+    "subject": "PLC제어기초",
+    "professor": "이수민",
+    "classroom": "CAD컴퓨터실",
+    "department": "전기",
     "sortDate": "2026-06-25",
     "week": 17
   },
@@ -5226,17 +5176,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 17
   },
   {
-    "id": "s322",
+    "id": "s151",
     "date": "6/25",
     "day": "목",
     "periods": [
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ],
-    "subject": "PLC제어기초",
-    "professor": "이수민",
-    "classroom": "CAD컴퓨터실",
-    "department": "전기",
+    "subject": "소방시설설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
     "sortDate": "2026-06-25",
     "week": 17
   },
@@ -5292,21 +5246,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 17
   },
   {
-    "id": "s155",
-    "date": "6/29",
-    "day": "월",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-06-29",
-    "week": 18
-  },
-  {
     "id": "s324",
     "date": "6/29",
     "day": "월",
@@ -5355,6 +5294,21 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "전기소방설비설계",
     "professor": "이강희",
     "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-06-29",
+    "week": 18
+  },
+  {
+    "id": "s155",
+    "date": "6/29",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-06-29",
     "week": 18
@@ -5461,6 +5415,21 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 18
   },
   {
+    "id": "s158",
+    "date": "7/2",
+    "day": "목",
+    "periods": [
+      1,
+      2
+    ],
+    "subject": "소방시설설계",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-07-02",
+    "week": 18
+  },
+  {
     "id": "s159",
     "date": "7/2",
     "day": "목",
@@ -5475,21 +5444,6 @@ export const scheduleData: ScheduleEntry[] = [
     "subject": "소방시설설계",
     "professor": "유상태",
     "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-07-02",
-    "week": 18
-  },
-  {
-    "id": "s158",
-    "date": "7/2",
-    "day": "목",
-    "periods": [
-      1,
-      2
-    ],
-    "subject": "소방시설설계",
-    "professor": "이수민",
-    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-07-02",
     "week": 18
@@ -5559,21 +5513,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 18
   },
   {
-    "id": "s164",
-    "date": "7/6",
-    "day": "월",
-    "periods": [
-      5,
-      6
-    ],
-    "subject": "직업과사회",
-    "professor": "권오연",
-    "classroom": "강의실-2",
-    "department": "소방",
-    "sortDate": "2026-07-06",
-    "week": 19
-  },
-  {
     "id": "s330",
     "date": "7/6",
     "day": "월",
@@ -5621,20 +5560,61 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 19
   },
   {
-    "id": "s163",
+    "id": "s919",
     "date": "7/6",
     "day": "월",
     "periods": [
       1,
       2,
       3,
-      4,
-      7,
+      4
+    ],
+    "subject": "소방기본설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-07-06",
+    "week": 19
+  },
+  {
+    "id": "s920",
+    "date": "7/6",
+    "day": "월",
+    "periods": [
+      5,
+      6
+    ],
+    "subject": "직업과사회",
+    "professor": "권오연",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-07-06",
+    "week": 19
+  },
+  {
+    "id": "s921",
+    "date": "7/6",
+    "day": "월",
+    "periods": [
+      7
+    ],
+    "subject": "소방기본설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
+    "sortDate": "2026-07-06",
+    "week": 19
+  },
+  {
+    "id": "s922",
+    "date": "7/6",
+    "day": "월",
+    "periods": [
       8
     ],
-    "subject": "전기소방설비유지보수",
-    "professor": "이강희",
-    "classroom": "전력전자실",
+    "subject": "소방이론",
+    "professor": "박민우",
+    "classroom": "강의실-2",
     "department": "소방",
     "sortDate": "2026-07-06",
     "week": 19
@@ -5682,25 +5662,6 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 19
   },
   {
-    "id": "s166",
-    "date": "7/8",
-    "day": "수",
-    "periods": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ],
-    "subject": "소방시설설계",
-    "professor": "유상태",
-    "classroom": "전력전자실",
-    "department": "소방",
-    "sortDate": "2026-07-08",
-    "week": 19
-  },
-  {
     "id": "s334",
     "date": "7/8",
     "day": "수",
@@ -5716,6 +5677,25 @@ export const scheduleData: ScheduleEntry[] = [
     "professor": "이강희",
     "classroom": "시퀀스제어실",
     "department": "전기",
+    "sortDate": "2026-07-08",
+    "week": 19
+  },
+  {
+    "id": "s166",
+    "date": "7/8",
+    "day": "수",
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "subject": "소방시설설계",
+    "professor": "유상태",
+    "classroom": "전력전자실",
+    "department": "소방",
     "sortDate": "2026-07-08",
     "week": 19
   },
@@ -5741,13 +5721,39 @@ export const scheduleData: ScheduleEntry[] = [
     "week": 19
   },
   {
-    "id": "s167",
+    "id": "s923",
     "date": "7/9",
     "day": "목",
     "periods": [
-      1,
+      1
+    ],
+    "subject": "건강과능력개발",
+    "professor": "박수명",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-07-09",
+    "week": 19
+  },
+  {
+    "id": "s924",
+    "date": "7/9",
+    "day": "목",
+    "periods": [
       2,
-      3,
+      3
+    ],
+    "subject": "AI와윤리",
+    "professor": "이수민",
+    "classroom": "강의실-2",
+    "department": "소방",
+    "sortDate": "2026-07-09",
+    "week": 19
+  },
+  {
+    "id": "s925",
+    "date": "7/9",
+    "day": "목",
+    "periods": [
       4,
       5,
       6,
@@ -5857,4 +5863,5 @@ export const scheduleData: ScheduleEntry[] = [
   { id: "pt-46", date: "7/25", day: "토", periods: [7, 8, 9], subject: "PLC기본운영", professor: "최무호", classroom: "전력전자", department: "2학년", sortDate: "2026-07-25", week: 21 },
   { id: "pt-47", date: "8/1", day: "토", periods: [1, 2, 3], subject: "PLC기본운영", professor: "최무호", classroom: "전력전자", department: "2학년", sortDate: "2026-08-01", week: 22 },
   { id: "pt-48", date: "8/1", day: "토", periods: [4, 5], subject: "인터페이스제작", professor: "박명석", classroom: "전력전자", department: "2학년", sortDate: "2026-08-01", week: 22 },
+
 ];
